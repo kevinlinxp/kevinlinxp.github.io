@@ -1,0 +1,50 @@
+{
+  "id": "fd-editor-section",
+  "editorUIElements": [
+    {
+      "key": "uiElementProperties.title",
+      "title": "DnD Component Label",
+      "description": "The label for this drag-and-drop item. Will not be used when generating this component",
+      "placeholder": "e.g., Column"
+    },
+    {
+      "key": "uiElementProperties.readonly",
+      "title": "Read only",
+      "description": "If checked, all the child items in this section will become readonly"
+    },
+    {
+      "key": "uiElementProperties.htmlClass",
+      "title": "Layout CSS Class",
+      "description": "CSS Class(es) for the &lt;div&gt;",
+      "placeholder": "e.g., bg-info"
+    }
+  ],
+  "editorSchema": {
+    "type": "object",
+    "properties": {
+      "uiElementProperties": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "notitle": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "readonly": {
+            "type": "boolean"
+          },
+          "htmlClass": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

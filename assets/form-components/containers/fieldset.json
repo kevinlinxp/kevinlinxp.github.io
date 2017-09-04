@@ -1,0 +1,13 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-fieldset",
+    "name": "Fieldset"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "type": "fieldset",
+      "title": "Field Set"
+    }
+  },
+  "$dnd-children": []
+}

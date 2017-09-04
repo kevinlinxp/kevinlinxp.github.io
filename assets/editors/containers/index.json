@@ -1,0 +1,9 @@
+{
+  "name": "Containers",
+  "items": [
+    "fd-editor-section.json",
+    "fd-editor-fieldset.json",
+    "fd-editor-array.json",
+    "fd-editor-column.json"
+  ]
+}

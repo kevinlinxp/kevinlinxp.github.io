@@ -1,0 +1,14 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-button",
+    "name": "Save"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "title": "Save",
+      "type": "button",
+      "style": "btn-success",
+      "onClick": "save()"
+    }
+  }
+}

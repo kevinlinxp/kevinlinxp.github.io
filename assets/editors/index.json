@@ -1,0 +1,10 @@
+{
+  "name": "Editors",
+  "items": [
+    "inputs",
+    "selects",
+    "containers",
+    "buttons",
+    "widgets"
+  ]
+}

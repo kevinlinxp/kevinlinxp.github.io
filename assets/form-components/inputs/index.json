@@ -1,0 +1,11 @@
+{
+  "name": "Inputs",
+  "items": [
+    "text-input.json",
+    "number-input.json",
+    "integer-input.json",
+    "email-input.json",
+    "password-input.json",
+    "textarea.json"
+  ]
+}
