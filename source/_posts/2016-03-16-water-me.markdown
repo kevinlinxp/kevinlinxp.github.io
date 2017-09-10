@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "WaterMe"
+date:   2016-03-16 19:30:00
+comments: true
+image: ../../../images/water-me.png
+categories: jekyll update
+---
+[Go to live site](https://www.control-me.net){:target="_blank"} (test20@nymet.com.au/1234)
+
+#### Background
+[Nymet Australia](http://www.nymet.com.au/){:target="_blank"} sells "WaterMe", a wireless irrigation controller that can switch on or off valves, collect watering metrics, and communicate with [https://www.control-me.net](https://www.control-me.net){:target="_blank"} (HTTP get every 10 seconds). Customers can register their purchased devices on this website and manage them remotely.
+
+#### Technology
+- The back-end technology stack is a typical combination of Spring MVC and Hibernate with RESTful APIs (Jersey).
+- The front-end uses JSP with AngularJS to create an interactive UI for the system users.
+- This small real-time project is fully covered with unit and integration tests.
