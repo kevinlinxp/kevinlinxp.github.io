@@ -1,0 +1,10 @@
+{
+  "name": "Selects",
+  "items": [
+    "fd-editor-select.json",
+    "fd-editor-radios.json",
+    "fd-editor-radiobuttons.json",
+    "fd-editor-checkbox.json",
+    "fd-editor-checkboxes.json"
+  ]
+}

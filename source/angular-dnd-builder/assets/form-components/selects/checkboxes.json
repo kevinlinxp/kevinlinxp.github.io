@@ -1,0 +1,36 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-checkboxes",
+    "name": "Checkboxes"
+  },
+  "$dnd-data": {
+    "key": "checkboxes",
+    "uiElementProperties": {
+      "title": "Checkboxes",
+      "type": "checkboxes",
+      "titleMap": [
+        {
+          "value": "id1",
+          "name": "Text 1"
+        },
+        {
+          "value": "id2",
+          "name": "Text 2"
+        },
+        {
+          "value": "id3",
+          "name": "Text 3"
+        }
+      ],
+      "enableSuccessState": true,
+      "enableErrorState": true,
+      "feedback": false
+    },
+    "schemaProperties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

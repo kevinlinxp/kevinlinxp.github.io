@@ -1,0 +1,15 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-section",
+    "name": "Row (div.row)"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "type": "section",
+      "title": "Row (div.row)",
+      "notitle": true,
+      "htmlClass": "row"
+    }
+  },
+  "$dnd-children": []
+}

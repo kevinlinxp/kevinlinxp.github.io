@@ -1,0 +1,7 @@
+{
+  "name": "Buttons",
+  "items": [
+    "fd-editor-button.json",
+    "fd-editor-btn-group.json"
+  ]
+}

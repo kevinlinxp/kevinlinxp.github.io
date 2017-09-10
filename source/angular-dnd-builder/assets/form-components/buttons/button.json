@@ -1,0 +1,13 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-button",
+    "name": "Button"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "title": "Button",
+      "type": "button",
+      "style": "btn-default"
+    }
+  }
+}

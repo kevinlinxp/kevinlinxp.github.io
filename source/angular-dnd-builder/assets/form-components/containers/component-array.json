@@ -1,0 +1,26 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-array",
+    "name": "Component Array"
+  },
+  "$dnd-data": {
+    "key": "array",
+    "uiElementProperties": {
+      "type": "array",
+      "title": "Component Array",
+      "notitle": false,
+      "add": "Add",
+      "style": {
+        "add": "btn-success"
+      }
+    },
+    "schemaProperties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  "$dnd-children": []
+}

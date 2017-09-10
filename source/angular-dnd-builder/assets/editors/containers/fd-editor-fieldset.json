@@ -1,0 +1,47 @@
+{
+  "id": "fd-editor-fieldset",
+  "editorUIElements": [
+    {
+      "key": "uiElementProperties.title",
+      "title": "Legend",
+      "description": "Legend of this fieldset",
+      "placeholder": "e.g., Basic Information"
+    },
+    {
+      "key": "uiElementProperties.readonly",
+      "title": "Read only",
+      "description": "If checked, all the child items in this section will become readonly"
+    },
+    {
+      "key": "uiElementProperties.htmlClass",
+      "title": "Layout CSS Class",
+      "description": "CSS Class(es) for the &lt;div&gt;",
+      "placeholder": "e.g., bg-info"
+    }
+  ],
+  "editorSchema": {
+    "type": "object",
+    "properties": {
+      "uiElementProperties": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "readonly": {
+            "type": "boolean"
+          },
+          "htmlClass": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

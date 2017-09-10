@@ -1,0 +1,13 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-html-block",
+    "name": "HTML Block"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "title": "HTML Block",
+      "type": "message",
+      "message": "<h4><i>Some static HTML content...</i></h4>"
+    }
+  }
+}

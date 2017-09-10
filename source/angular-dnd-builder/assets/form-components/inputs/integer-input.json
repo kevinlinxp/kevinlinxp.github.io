@@ -1,0 +1,19 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-integer-input",
+    "name": "Integer Input"
+  },
+  "$dnd-data": {
+    "key": "integerInput",
+    "uiElementProperties": {
+      "title": "Integer Input",
+      "type": "number",
+      "enableSuccessState": true,
+      "enableErrorState": true,
+      "feedback": true
+    },
+    "schemaProperties": {
+      "type": "integer"
+    }
+  }
+}
