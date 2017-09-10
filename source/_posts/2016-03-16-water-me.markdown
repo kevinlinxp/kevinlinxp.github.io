@@ -6,7 +6,7 @@ comments: true
 image: ../../../images/water-me.png
 categories: jekyll update
 ---
-[Go to live site](https://www.control-me.net){:target="_blank"} (test20@nymet.com.au/1234)
+[Open live site](https://www.control-me.net){:target="_blank"} (test20@nymet.com.au/1234)
 
 #### Background
 [Nymet Australia](http://www.nymet.com.au/){:target="_blank"} sells "WaterMe", a wireless irrigation controller that can switch on or off valves, collect watering metrics, and communicate with [https://www.control-me.net](https://www.control-me.net){:target="_blank"} (HTTP get every 10 seconds). Customers can register their purchased devices on this website and manage them remotely.
