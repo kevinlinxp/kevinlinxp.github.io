@@ -15,29 +15,27 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/end2end"
+title: Kevin Lin
+description: "Full Stack Java Angular AngularJS Developer"
+keywords: "Full Stack, Java, Angular, AngularJS, Developer, Software Engineer, Kevin Lin, Kevin, resume"
+url: https://kevinlinxp.github.io
+baseurl: ""
 
 google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "nandothemes"
-disqus_site_shortname: "nandothemes"
+repo: https://github.com/kevinlinxp
+disqus_shortname: "kevinlinxp"
+disqus_site_shortname: "kevinlinxp"
 
 # Author settings
 author:
-  name: Fernando Moreira
-  job: Frontend Engineer
+  name: Kevin Lin
+  job: Full Stack Java Developer
   bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   thumb: /images/author.jpg
-  email: nandomoreira.me@gmail.com
-  url: https://nandomoreira.me/
-  github: https://github.com/nandomoreirame
-  twitter: https://twitter.com/umdevux
-  facebook: https://facebook.com/umdevux
-  linkedin: https://linkedin.com/in/nandomoreirame
+  email: kevinlinxp@gmail.com
+  url: https://kevinlinxp.github.io
+  github: https://github.com/kevinlinxp
+  linkedin: https://www.linkedin.com/in/kevin-lin-9b016571/
 
 # navbar pages
 navbar:
