@@ -1,5 +1,6 @@
 # Build settings
-permalink: /blog/:year/:title/
+# permalink: /blog/:year/:title/
+permalink: /showcases/:year/:title/
 markdown: kramdown
 highlighter: pygments
 gems: [jekyll-paginate]
