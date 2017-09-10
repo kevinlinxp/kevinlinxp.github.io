@@ -30,12 +30,13 @@ disqus_site_shortname: "kevinlinxp"
 author:
   name: Kevin Lin
   job: Full Stack Java Developer
-  bio: "I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable."
+  bio: "I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level."
   thumb: /images/kevinlin@blueMt.png
   email: kevinlinxp@gmail.com
   url: https://kevinlinxp.github.io
   github: https://github.com/kevinlinxp
   linkedin: https://www.linkedin.com/in/kevin-lin-9b016571/
+  resume: https://registry.jsonresume.org/kevinlin
 
 # navbar pages
 navbar:
