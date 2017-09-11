@@ -9,7 +9,7 @@ categories: jekyll update
 [Open live site](https://www.control-me.net){:target="_blank"} (test20@nymet.com.au/1234)
 
 #### Background
-[Nymet Australia](http://www.nymet.com.au/){:target="_blank"} sells "WaterMe", a wireless irrigation controller that can switch on or off valves, collect watering metrics, and communicate with [https://www.control-me.net](https://www.control-me.net){:target="_blank"} (HTTP get every 10 seconds). Customers can register their purchased devices on this website and manage them remotely.
+[Nymet Australia](http://www.nymet.com.au/){:target="_blank"} sells "WaterMe", a wireless irrigation controller that can switch on and off valves, collect watering metrics, and communicate with [the WaterMe server](https://www.control-me.net){:target="_blank"} through HTTP calls. Customers can register their purchased devices on [the WaterMe server](https://www.control-me.net) and manage them remotely.
 
 #### Technology
 - The back-end technology stack is a typical combination of Spring MVC and Hibernate with RESTful APIs (Jersey).
