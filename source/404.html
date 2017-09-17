@@ -1,4 +1,32 @@
 ---
-layout: page
 permalink: /404.html
 ---
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+
+  {% include header.showcases.html %}
+
+    <div class="hero-inner" style="display:inherit">
+      <div class="container" >
+        <h3>o(*￣▽￣*)ブ Oops, the page is missing.</h3>
+      </div>
+    </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      {% include social.html %}
+      <!-- <p class="txt-medium-gray">
+        <small>&copy;{{ site.time | date: '%Y' }} All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+      </p> -->
+    </div>
+  </footer>
+
+</body>
+
+</html>
