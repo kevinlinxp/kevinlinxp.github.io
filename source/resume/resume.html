@@ -1212,9 +1212,12 @@ permalink: /resume/resume.html
           </div>
           <hr/>
           <div class="social-links text-center">
-            <div><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/kevin-lin-9b016571"
-                target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on LinkedIn"></a><a class="fs-2x social-link link-github icon-github"
-                href="https://github.com/kevinlinxp" target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on Github"></a></div>
+            <div>
+              {% for profile in site.data.resume.basics.profiles %}
+                <a class="fs-2x social-link link-{{ profile.network | downcase }} icon-{{ profile.network | downcase }}" href="{{ profile.url }}"
+                target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on {{ profile.network }}"></a>
+              {% endfor %}
+         </div>
           </div>
       </section>
       <section class="col-md-9 card-wrapper pull-right">
@@ -1227,11 +1230,7 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">About</h4>
                 <div class="card card-nested">
                   <div class="content mop-wrapper" itemprop="description">
-                    <p>I am a full stack Java developer with 7 years of work experience who regards building high-quality and
-                      valuable software systems as the very essence of my career. I love to combine all sorts of suitable
-                      technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects
-                      to the next level. It's a great joy for me being a contributive, cooperative team player and making
-                      our projects increasingly powerful, robust, and profitable.</p>
+                    <p>{{ site.data.resume.basics.summary }}</p>
                   </div>
                 </div>
               </div>
