@@ -7,7 +7,7 @@ permalink: /resume/resume.html
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kevin Lin</title>
+  <title>{{ site.data.resume.basics.name }}</title>
   <link rel="stylesheet" href="./bootstrap.min.css" />
   <style>
     @font-face {
@@ -1201,20 +1201,20 @@ permalink: /resume/resume.html
         </ul>
       </nav>
       <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-        <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Kevin Lin" src="../images/kevinlin@blueMt.png" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>{{ site.data.resume.basics.name }}</b></h3><h5 class="text-muted" itemprop="jobTitle">Java Software Engineer, Developer</h5></div></span>
+        <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="{{ site.data.resume.basics.name }}" src="../images/kevinlin@blueMt.png" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>{{ site.data.resume.basics.name }}</b></h3><h5 class="text-muted" itemprop="jobTitle">{{ site.data.resume.basics.label }}</h5></div></span>
           <hr/>
           <div class="contact-details clearfix">
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Level 12, 101 Grenfell Street, Adelaide, South Australia, AU, 5000</span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+61 450 095 568</span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:kevinlinxp@gmail.com" itemprop="email">kevinlinxp@gmail.com</a></span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="https://kevinlinxp.github.io" target="_blank">https://kevinlinxp.github.io</a></span></div>
-            <div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Mandarin</span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">{{ site.data.resume.basics.location.address }}, {{ site.data.resume.basics.location.city }}, {{ site.data.resume.basics.location.region }}, {{ site.data.resume.basics.location.countryCode }}, {{ site.data.resume.basics.location.postalCode }}</span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">{{ site.data.resume.basics.phone }}</span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:{{ site.data.resume.basics.email }}" itemprop="email">{{ site.data.resume.basics.email }}</a></span></div>
+            <div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="{{ site.data.resume.basics.website }}" target="_blank">{{ site.data.resume.basics.website }}</a></span></div>
+            <div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">{{ site.data.resume.languages | map: 'language' | join: ', ' }}</span></div>
           </div>
           <hr/>
           <div class="social-links text-center">
             <div><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/kevin-lin-9b016571"
-                target="_blank" data-toggle="tooltip" title="Kevin Lin on LinkedIn"></a><a class="fs-2x social-link link-github icon-github"
-                href="https://github.com/kevinlinxp" target="_blank" data-toggle="tooltip" title="Kevin Lin on Github"></a></div>
+                target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on LinkedIn"></a><a class="fs-2x social-link link-github icon-github"
+                href="https://github.com/kevinlinxp" target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on Github"></a></div>
           </div>
       </section>
       <section class="col-md-9 card-wrapper pull-right">
