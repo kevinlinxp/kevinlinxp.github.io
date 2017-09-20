@@ -1240,126 +1240,117 @@ permalink: /resume/resume.html
               <div class="info">
                 <h4 class="title text-uppercase">Work Experience</h4>
                 <ul class="list-unstyled clear-margin">
+                {% for work in site.data.resume.work %}
                   <li class="card card-nested clearfix">
                     <div class="content">
-                      <p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Senior Java Developer</strong>,&nbsp;
-                        <a href="http://relational.com.au/" target="_blank">Relational Data Systems</a>
+                      <p class="clear-margin relative">
+                        {% if work.endDate == '' %}
+                          <i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
+                        {% endif %}
+                        <strong>{{ work.position }}</strong>,&nbsp;<a href="{{ work.website }}" target="_blank">{{ work.company }}</a>
                       </p>
-                      <p class="text-muted"><small><span class="space-right">May, 2016 - Present</span></small></p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                          {% capture startYear %}
+                            {{ work.startDate | split:'.' | first }}
+                          {% endcapture %}
+                          {% capture startMonth %}
+                            {{ work.startDate | split:'.' | last }}
+                          {% endcapture %}
+                          {% assign startMonth = startMonth | times:1 %}
+                          {% case startMonth %}
+                          {% when 1 %} Jan,
+                          {% when 2 %} Feb,
+                          {% when 3 %} Mar,
+                          {% when 4 %} Apr,
+                          {% when 5 %} May,
+                          {% when 6 %} Jun,
+                          {% when 7 %} Jul,
+                          {% when 8 %} Aug,
+                          {% when 9 %} Sep,
+                          {% when 10 %} Oct,
+                          {% when 11 %} Nov,
+                          {% when 12 %} Dec,
+                          {% endcase %}
+                          {{ startYear }} -
+                          {% if work.endDate != '' %}
+                            {% capture endYear %}
+                              {{ work.endDate | split:'.' | first }}
+                            {% endcapture %}
+                            {% capture endMonth %}
+                              {{ work.endDate | split:'.' | last }}
+                            {% endcapture %}
+                            {% assign endMonth = endMonth | times:1 %}
+                            {% case endMonth %}
+                            {% when 1 %} Jan,
+                            {% when 2 %} Feb,
+                            {% when 3 %} Mar,
+                            {% when 4 %} Apr,
+                            {% when 5 %} May,
+                            {% when 6 %} Jun,
+                            {% when 7 %} Jul,
+                            {% when 8 %} Aug,
+                            {% when 9 %} Sep,
+                            {% when 10 %} Oct,
+                            {% when 11 %} Nov,
+                            {% when 12 %} Dec,
+                            {% endcase %}
+                            {{ endYear }}
+                          </span><span>
+                             {% capture startTotalMonth %}
+                               {{ startYear | times:12 | plus:startMonth }}
+                             {% endcapture %}
+                             {% capture endTotalMonth %}
+                               {{ endYear | times:12 | plus:endMonth }}
+                             {% endcapture %}
+                             {% capture totalMonthsWorked %}
+                               {{ endTotalMonth | minus:startTotalMonth }}
+                             {% endcapture %}
+                             {% capture yearsWorked %}
+                               {{ totalMonthsWorked | divided_by:12 }}
+                             {% endcapture %}
+                             {% assign yearsWorked = yearsWorked | times:1 %}
+                             {% capture monthsWorkedInTheLastYear %}
+                               {{ totalMonthsWorked | modulo:12 }}
+                             {% endcapture %}
+                             {% assign monthsWorkedInTheLastYear = monthsWorkedInTheLastYear | times:1 %}
+                            <i class="icon-clock mr-5"></i>
+                            {% if yearsWorked > 0 %}
+                              {{ yearsWorked }}
+                              {% if yearsWorked == 1 %}
+                                year
+                              {% else %}
+                                years
+                              {% endif %}
+                            {% endif %}
+                            {% if monthsWorkedInTheLastYear > 0 %}
+                              {{ monthsWorkedInTheLastYear }}
+                              {% if monthsWorkedInTheLastYear == 1 %}
+                                month
+                              {% else %}
+                                months
+                              {% endif %}
+                            {% endif %}
+                          {% else %}
+                            Present
+                          {% endif %}
+                          </span>
+                        </small>
+                      </p>
                       <div class="mop-wrapper space-bottom">
-                        <p>I am responsible for analysing, prototyping and implementing the
-                          company’s new solution for creating Workflow/BPM systems, as well as integrating this new product
-                          into other Java systems.</p>
+                        <p>{{ work.summary }}</p>
                       </div>
                       <ul>
+                      {% for highlight in work.highlights %}
                         <li class="mop-wrapper">
-                          <p>Created, and being the core developer of RDSWB (Relational Data Systems Workflow Builder), a multi-module
-                            and pluggable web system that provides drag-and-drop components for creating large, complex and
-                            dynamic forms, as well as to design, deploy, and run workflows.</p>
+                          <p>{{ highlight }}</p>
                         </li>
-                        <li class="mop-wrapper">
-                          <p>Quickly implemented a PoC workflow &quot;Mineral Exploration Licence Application&quot; using RDSWB
-                            which won the bid for the NT government's MELS (Mineral Exploration Licence System) for our company.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Rebuilt the &quot;Priority Notice&quot; module of SAILIS (South Australia Integrated Land Information
-                            System) using RDSWB.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Relevant Skills: Java, AngularJS, Spring Boot, Flowable, Node.js, Schema Form, Gulp, Bower, Express,
-                            EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, etc.</p>
-                        </li>
+                      {% endfor %}
                       </ul>
                     </div>
                   </li>
-                  <li class="card card-nested clearfix">
-                    <div class="content">
-                      <p class="clear-margin relative"><strong>Co-founder and Full Stack Developer</strong>,&nbsp;<a href="http://www.textbookmango.com" target="_blank">TextbookMango</a></p>
-                      <p class="text-muted"><small><span class="space-right">Mar, 2014 - Mar, 2017</span><span><i class="icon-clock mr-5"></i>3 years</span></small></p>
-                      <div class="mop-wrapper space-bottom">
-                        <p>I was responsible for developing, operating and maintaining our company's Magento web store (www.textbookmango.com)
-                          that rents and sells textbooks to university students.</p>
-                      </div>
-                      <ul>
-                        <li class="mop-wrapper">
-                          <p>Developed front-end CMS pages and promotion widgets.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Developed back-end functions such as book management, rented books tracking, and promotion management.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Integrated our website with eWAY.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Deployed and hosted the website using Git on a CentOS LAMP environment.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Relevant Skills: JavaScript, JQuery, PHP, Magento, Shell Scripts, Git, LAMP, Web Hosting, etc.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="card card-nested clearfix">
-                    <div class="content">
-                      <p class="clear-margin relative"><strong>Java Developer</strong>,&nbsp;<a href="http://www.nymet.com.au/" target="_blank">Nymet Australia</a></p>
-                      <p class="text-muted"><small><span class="space-right">Nov, 2015 - Apr, 2016</span><span><i class="icon-clock mr-5"></i>5 months</span></small></p>
-                      <div class="mop-wrapper space-bottom">
-                        <p>Worked on project WaterMe, the company's online irrigation controller system.</p>
-                      </div>
-                      <ul>
-                        <li class="mop-wrapper">
-                          <p>Developed weather condition and forecast data module that retrieves data from Weather Underground
-                            API to enhance automatic watering.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Optimised the system's performance, reducing its queries per second from 3000 to 600.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Added international languages support.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Migrated the server to AWS.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit,
-                            Maven, CentOS, Tomcat, MySQL, etc.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="card card-nested clearfix">
-                    <div class="content">
-                      <p class="clear-margin relative"><strong>Application Developer</strong>,&nbsp;<a href="https://www.ibm.com/cn-zh/" target="_blank">IBM China</a></p>
-                      <p class="text-muted"><small><span class="space-right">Mar, 2011 - Jun, 2013</span><span><i class="icon-clock mr-5"></i>2 years 3 months</span></small></p>
-                      <div class="mop-wrapper space-bottom">
-                        <p>Worked in IBM Systems Lab Services as a front-end developer for IBM SCE (Smart Cloud Environment,
-                          an IaaS platform), as well as being responsible for researching and developing subsidiary projects
-                          for IBM SDC (Smart Data Centre).</p>
-                      </div>
-                      <ul>
-                        <li class="mop-wrapper">
-                          <p>Created and maintained reusable front-end components for IBM SCE with dojo.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Planned the architecture and worked out the 3D presentation solutions for the IBM SDC data visualisation
-                            applications using WebGL and VTK.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Developed OpenFOAM mesh and boundary condition generation tool that works with VTK to visualise
-                            data centre temperature and wind data.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Optimised the data centre sensors control module which increased the data collection rate by 6
-                            times.</p>
-                        </li>
-                        <li class="mop-wrapper">
-                          <p>Relevant Skills: Java, Struts 2, Spring, Hibernate, JSP, JavaScript, WebGL, dojo, VTK, OpenFoam,
-                            Swing, JWS, etc.
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
+                {% endfor %}
                   <li class="card card-nested clearfix">
                     <div class="content">
                       <p class="clear-margin relative"><strong>Java Developer</strong>,&nbsp;<a href="http://www.yonyouaud.com/" target="_blank">Beijing Yonyou Audit Software Co., Ltd.</a></p>
