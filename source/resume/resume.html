@@ -1360,92 +1360,20 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">Skills</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
+                    {% for skill in site.data.resume.skills %}
                     <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Java</strong>
-                        <div class="space-top labels"><span class="label label-keyword">Java</span><span class="label label-keyword">Spring</span>
-                          <span
-                            class="label label-keyword">Hibernate</span>
-                            <span class="label label-keyword">JSP</span><span class="label label-keyword">Flowable</span>
-                            <span
-                              class="label label-keyword">Swing</span>
-                              <span class="label label-keyword">JWS</span><span class="label label-keyword">JUnit</span>
-                              <span
-                                class="label label-keyword">Maven</span>
-                                <span class="label label-keyword">Ant</span><span class="label label-keyword">Tomcat</span></div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Front-end</strong>
-                        <div class="space-top labels"><span class="label label-keyword">Angular</span><span class="label label-keyword">AngularJS</span>
-                          <span
-                            class="label label-keyword">TypeScript</span>
-                            <span class="label label-keyword">JavaScript</span><span class="label label-keyword">HTML</span>
-                            <span
-                              class="label label-keyword">CSS</span>
+                      <div class="skill-level" data-toggle="tooltip" title="{{ skill.level }}" data-placement="left">
+                          <div class="skill-progress {{ skill.level | downcase }}"></div>
                         </div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Node.js</strong>
-                        <div class="space-top labels"><span class="label label-keyword">Bower</span><span class="label label-keyword">Gulp</span>
-                          <span
-                            class="label label-keyword">Karma</span>
-                            <span class="label label-keyword">Jasmine</span><span class="label label-keyword">Express</span>
-                            <span
-                              class="label label-keyword">EJS</span>
+                        <div class="skill-info"><strong>{{ skill.name }}</strong>
+                          <div class="space-top labels">
+                            {% for keyword in skill.keywords %}
+                            <span class="label label-keyword">{{ keyword }}</span>
+                            {% endfor %}
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Foundamental</strong>
-                        <div class="space-top labels"><span class="label label-keyword">SOLID</span><span class="label label-keyword">GRASP</span>
-                          <span
-                            class="label label-keyword">Design Patterns</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Linux</strong>
-                        <div class="space-top labels"><span class="label label-keyword">LAMP</span><span class="label label-keyword">CentOS</span>
-                          <span
-                            class="label label-keyword">Website Hosting</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Database</strong>
-                        <div class="space-top labels"><span class="label label-keyword">SQL</span><span class="label label-keyword">MySQL</span><span class="label label-keyword">Oracle</span></div>
-                      </div>
-                    </li>
-                    <li class="card card-nested card-skills">
-                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
-                        <div class="skill-progress master"></div>
-                      </div>
-                      <div class="skill-info"><strong>Others</strong>
-                        <div class="space-top labels"><span class="label label-keyword">AJAX</span><span class="label label-keyword">RESTful</span>
-                          <span
-                            class="label label-keyword">Git</span>
-                            <span class="label label-keyword">Git Workflow</span><span class="label label-keyword">Jenkins</span></div>
-                      </div>
-                    </li>
+                      </li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
@@ -1456,21 +1384,65 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">Education</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin relative"><strong>Software Engineering, Master,&nbsp;</strong>University of Adelaide</p>
-                        <p class="text-muted clear-margin"><small>Jul, 2013 - Jul, 2015</small></p><i></i></div>
-                    </li>
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin relative"><strong>Software Engineering - Business Intelligence, Master,&nbsp;</strong>Beijing Jiaotong University</p>
-                        <p class="text-muted clear-margin"><small>Sep, 2007 - Jun, 2009</small></p><i></i></div>
-                    </li>
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin relative"><strong>Communication Engineering, Bachelor ,&nbsp;</strong>Beijing Jiaotong University</p>
-                        <p class="text-muted clear-margin"><small>Sep, 2003 - Jun, 2007</small></p><i></i></div>
-                    </li>
+                    {% for edu in site.data.resume.education %}
+                      {% capture startYear %}
+                        {{ edu.startDate | split:'.' | first }}
+                      {% endcapture %}
+                      {% capture startMonth %}
+                        {{ edu.startDate | split:'.' | last }}
+                      {% endcapture %}
+                      {% assign startMonth = startMonth | times:1 %}
+
+                      {% capture endYear %}
+                        {{ edu.endDate | split:'.' | first }}
+                      {% endcapture %}
+                      {% capture endMonth %}
+                        {{ edu.endDate | split:'.' | last }}
+                      {% endcapture %}
+                      {% assign endMonth = endMonth | times:1 %}
+
+                      <li class="card card-nested">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>{{ edu.area }}, {{ edu.studyType }},&nbsp;</strong>
+                            {{ edu.institution }}
+                          </p>
+                          <p class="text-muted clear-margin">
+                            <small>
+                            {% case startMonth %}
+                              {% when 1 %} Jan,
+                              {% when 2 %} Feb,
+                              {% when 3 %} Mar,
+                              {% when 4 %} Apr,
+                              {% when 5 %} May,
+                              {% when 6 %} Jun,
+                              {% when 7 %} Jul,
+                              {% when 8 %} Aug,
+                              {% when 9 %} Sep,
+                              {% when 10 %} Oct,
+                              {% when 11 %} Nov,
+                              {% when 12 %} Dec,
+                              {% endcase %} {{ startYear }} -
+                              {% case endMonth %}
+                              {% when 1 %} Jan,
+                              {% when 2 %} Feb,
+                              {% when 3 %} Mar,
+                              {% when 4 %} Apr,
+                              {% when 5 %} May,
+                              {% when 6 %} Jun,
+                              {% when 7 %} Jul,
+                              {% when 8 %} Aug,
+                              {% when 9 %} Sep,
+                              {% when 10 %} Oct,
+                              {% when 11 %} Nov,
+                              {% when 12 %} Dec,
+                              {% endcase %} {{ endYear }}
+                            </small>
+                          </p>
+                          <i></i>
+                        </div>
+                      </li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
