@@ -1422,8 +1422,8 @@ permalink: /resume/resume.html
                               {% when 10 %} Oct,
                               {% when 11 %} Nov,
                               {% when 12 %} Dec,
-                              {% endcase %} {{ startYear }} -
-                              {% case endMonth %}
+                            {% endcase %} {{ startYear }} -
+                            {% case endMonth %}
                               {% when 1 %} Jan,
                               {% when 2 %} Feb,
                               {% when 3 %} Mar,
@@ -1436,7 +1436,7 @@ permalink: /resume/resume.html
                               {% when 10 %} Oct,
                               {% when 11 %} Nov,
                               {% when 12 %} Dec,
-                              {% endcase %} {{ endYear }}
+                            {% endcase %} {{ endYear }}
                             </small>
                           </p>
                           <i></i>
@@ -1453,24 +1453,43 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">Awards</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
+                    {% for award in site.data.resume.awards %}
+                      {% capture year %}
+                        {{ award.date | split:'.' | first }}
+                      {% endcapture %}
+                      {% capture month %}
+                        {{ award.date | slice:5,2 }}
+                      {% endcapture %}
+                      {% assign month = month | times:1 %}
+                      {% capture dayOfMonth %}
+                        {{ award.date | split:'.' | last }}
+                      {% endcapture %}
                     <li class="card card-nested">
                       <div class="content">
-                        <p class="clear-margin" itemprop="award"><strong> IBM China </strong>Zhiguo Dong</p>
-                        <p class="text-muted"><small>Awarded on: Jan 21, 2013</small></p>
+                        <p class="clear-margin" itemprop="award"><strong>{{ award.title }},</strong> {{ award.awarder }}</p>
+                        <p class="text-muted"><small>Awarded on:
+                          {% case month %}
+                            {% when 1 %} Jan
+                            {% when 2 %} Feb
+                            {% when 3 %} Mar
+                            {% when 4 %} Apr
+                            {% when 5 %} May
+                            {% when 6 %} Jun
+                            {% when 7 %} Jul
+                            {% when 8 %} Aug
+                            {% when 9 %} Sep
+                            {% when 10 %} Oct
+                            {% when 11 %} Nov
+                            {% when 12 %} Dec
+                          {% endcase %} {{ dayOfMonth }}, {{ year }}</small></p>
+                        {% if award.summary %}
                         <div class="mop-wrapper">
-                          <p>Personal Business Contribution Assessment Level 1 - Outstanding (Top 5%)</p>
+                          <p>{{ award.summary }}</p>
                         </div>
+                        {% endif %}
                       </div>
                     </li>
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin" itemprop="award"><strong>Beijing Yonyou Audit Software Co., Ltd. </strong>Ze Chen</p>
-                        <p class="text-muted"><small>Awarded on: Feb 20, 2010</small></p>
-                        <div class="mop-wrapper">
-                          <p>2009 Best New Comer</p>
-                        </div>
-                      </div>
-                    </li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
@@ -1481,23 +1500,68 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">Volunteer Work</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
+                    {% for volunteerWork in site.data.resume.volunteer %}
+                    {% capture startYear %}
+                      {{ volunteerWork.startDate | split:'.' | first }}
+                    {% endcapture %}
+                    {% capture startMonth %}
+                      {{ volunteerWork.startDate | split:'.' | last }}
+                    {% endcapture %}
+                    {% assign startMonth = startMonth | times:1 %}
+
+                    {% capture endYear %}
+                      {{ volunteerWork.endDate | split:'.' | first }}
+                    {% endcapture %}
+                    {% capture endMonth %}
+                      {{ volunteerWork.endDate | split:'.' | last }}
+                    {% endcapture %}
+                    {% assign endMonth = endMonth | times:1 %}
                     <li class="card card-nested">
                       <div class="content">
-                        <p class="clear-margin relative"><strong>Translation Assistance, </strong><a href="https://coderdojo.com/" target="_blank">Australia China Business Council</a></p>
-                        <p class="text-muted"><small>Nov, 2015 - Nov, 2015</small></p>
+                        <p class="clear-margin relative"><strong>{{ volunteerWork.position }}, </strong><a href="{{ volunteerWork.website }}" target="_blank">{{ volunteerWork.organization }}</a></p>
+                        <p class="text-muted">
+                          <small>
+                            {% case startMonth %}
+                              {% when 1 %} Jan,
+                              {% when 2 %} Feb,
+                              {% when 3 %} Mar,
+                              {% when 4 %} Apr,
+                              {% when 5 %} May,
+                              {% when 6 %} Jun,
+                              {% when 7 %} Jul,
+                              {% when 8 %} Aug,
+                              {% when 9 %} Sep,
+                              {% when 10 %} Oct,
+                              {% when 11 %} Nov,
+                              {% when 12 %} Dec,
+                            {% endcase %} {{ startYear }} -
+                            {% case endMonth %}
+                              {% when 1 %} Jan,
+                              {% when 2 %} Feb,
+                              {% when 3 %} Mar,
+                              {% when 4 %} Apr,
+                              {% when 5 %} May,
+                              {% when 6 %} Jun,
+                              {% when 7 %} Jul,
+                              {% when 8 %} Aug,
+                              {% when 9 %} Sep,
+                              {% when 10 %} Oct,
+                              {% when 11 %} Nov,
+                              {% when 12 %} Dec,
+                            {% endcase %} {{ endYear }}
+                          </small>
+                        </p>
                         <div class="mop-wrapper"></div>
                         <ul>
-                          <li class="mop-wrapper">
-                            <p>Helped the Business Council to set up the venue for the business migration, investment and trade
-                              exposition.</p>
-                          </li>
-                          <li class="mop-wrapper">
-                            <p>Assisted the local council members and business representatives from Mount Barker during the
-                              event, providing translation service between them and the Chinese business delegates.</p>
-                          </li>
+                          {% for highlight in volunteerWork.highlights %}
+                            <li class="mop-wrapper">
+                              <p>{{ highlight }}</p>
+                            </li>
+                          {% endfor %}
                         </ul>
                       </div>
                     </li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
@@ -1508,10 +1572,18 @@ permalink: /resume/resume.html
                 <h4 class="title text-uppercase">Interests</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
+                    {% for interest in site.data.resume.interests %}
                     <li class="card card-nested">
-                      <p><strong>Sports</strong></p>
-                      <div class="space-top labels"><span class="label label-keyword">Hiking</span><span class="label label-keyword">Foosball</span></div>
+                      <p><strong>{{ interest.name }}</strong></p>
+                      <div class="space-top labels">
+                        {% for keyword in interest.keywords %}
+                        <span class="label label-keyword">
+                          {{ keyword }}
+                        </span>
+                        {% endfor %}
+                      </div>
                     </li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>

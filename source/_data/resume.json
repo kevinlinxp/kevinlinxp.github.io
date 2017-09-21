@@ -106,9 +106,9 @@
     {
       "organization": "Australia China Business Council",
       "position": "Translation Assistance",
-      "website": "https://coderdojo.com/",
-      "startDate": "2015-11",
-      "endDate": "2015-11",
+      "website": "http://www.acbc.com.au",
+      "startDate": "2015.11",
+      "endDate": "2015.11",
       "summary": "",
       "highlights": [
         "Helped the Business Council to set up the venue for the business migration, investment and trade exposition.",
@@ -147,16 +147,15 @@
   ],
   "awards": [
     {
-      "title": " IBM China",
+      "title": "Outstanding Performance",
       "date": "2013.01.21",
-      "awarder": "Zhiguo Dong",
+      "awarder": "IBM China",
       "summary": "Personal Business Contribution Assessment Level 1 - Outstanding (Top 5%)"
     },
     {
-      "title": "Beijing Yonyou Audit Software Co., Ltd.",
-      "date": "2010.02.20",
-      "awarder": "Ze Chen",
-      "summary": "2009 Best New Comer"
+      "title": "Best Newcomer of The Year",
+      "date": "2010.01.10",
+      "awarder": "Beijing Yonyou Audit Software Co., Ltd."
     }
   ],
   "publications": [],
