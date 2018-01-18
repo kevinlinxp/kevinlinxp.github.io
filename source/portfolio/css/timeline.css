@@ -180,6 +180,60 @@
 	background-size: 22px;
 }
 
+.i-angular:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-angular.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-angularjs:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-angularjs.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-spring:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-spring.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-spring-boot:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-spring-boot.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-java:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-java.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-magento:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-magento.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
 /******* Hux Branch *****/
 
 /* navbar - dark mode */
@@ -214,11 +268,12 @@ body{
 	border-bottom: 1px solid #eeefef;
 }
 
-.cbp_tmlabel p{
-    padding: 1em 0;
-	/*text-indent: 2em;*/
-    margin: 0 1.5em;
-    border-top: 1px solid rgba(255,255,255,0.4);
+.cbp_tmlabel p {
+  font-weight: inherit;
+    /*padding: 1em 0;*/
+	  /*text-indent: 2em;*/
+    /*margin: 0 1.5em;*/
+    /*border-top: 1px solid rgba(255,255,255,0.4);*/
 }
 .cbp_tmlabel ul{
     padding: 0em 0;
@@ -287,6 +342,15 @@ body{
 	text-decoration: none;
 }
 
+.cbp_tmlabel ul.text-ul {
+    list-style: disc;
+    padding: 5px 0;
+}
+
+.cbp_tmlabel ul.text-ul li {
+    padding: 5px 0;
+}
+
 @media screen and (min-width: 1281px){
   .container {
     max-width: 800px;
@@ -320,4 +384,13 @@ body{
 	.cbp_tmlabel ul li.skill>span, .cbp_tmlabel ul li.skill>a{
 	    margin-right: 2px;
 	}
+}
+
+.help-block {
+  font-weight: 300;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
 }
