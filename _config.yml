@@ -23,7 +23,7 @@ sass:
 title: Kevin Lin
 description: "Full Stack Java Angular AngularJS Developer"
 keywords: "Full Stack, Java, Angular, AngularJS, Developer, Software Engineer, Kevin Lin, Kevin, resume"
-url: https://kevinlinxp.github.io
+url: www.kevinlinxp.com
 baseurl: ""
 
 google_analytics: UA-52446115-1
@@ -38,7 +38,7 @@ author:
   bio: "I regard building high-quality and valuable software systems as the very essence of my career, and I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level."
   thumb: /images/kevinlin@hahndorf.jpeg
   email: kevinlinxp@gmail.com
-  url: https://kevinlinxp.github.io
+  url: www.kevinlinxp.com
   github: https://github.com/kevinlinxp
   linkedin: https://linkedin.com/in/kevinlinxp
 
