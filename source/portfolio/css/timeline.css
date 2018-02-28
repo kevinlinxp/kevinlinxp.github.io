@@ -252,6 +252,15 @@
   background-size: 22px;
 }
 
+.i-antlr:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-antlr.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
 /******* Hux Branch *****/
 
 /* navbar - dark mode */
