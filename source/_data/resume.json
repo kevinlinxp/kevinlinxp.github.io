@@ -6,7 +6,7 @@
     "email": "kevinlinxp@gmail.com",
     "phone": "+61 450 095 568",
     "website": "http://www.kevinlinxp.com",
-    "summary": "I am a full stack Java developer with 7 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
+    "summary": "I am a full stack Java developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
     "location": {
       "address": "Level 12, 101 Grenfell Street",
       "postalCode": "5000",
@@ -37,9 +37,10 @@
       "summary": "Work in agile and waterfall teams as a solution finder and problem solver, being responsible for developing, enhancing and maintaining new and existing projects.",
       "highlights": [
         "Created and being the core developer of RDSWB (Relational Data Systems Workflow Builder), a multi-module and pluggable web system that provides drag-and-drop components for creating large, complex and dynamic forms, as well as to design, deploy, and run workflows.",
-        "Develop, upgrade forms and workflows using RDSWB for <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SAILIS</a> and ILIS (our company's main projects in SA and NT), and also migrate workflow data.",
+        "Maintain Jenkins jobs for RDSWB continuous delivery.",
+        "Maintain and enhance the Integrated Land Information Systems in both <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SA</a> and NT. Typical tasks are upgrading forms and BPM processes using RDSWB, migrating workflow data, developing new features, fixing bugs and so on.",
         "Developed E-Value, a sub-system that works with SAILIS for property valuation.",
-        "Maintain Jenkins jobs for continuous delivery.",
+        "Develop quick, proof-of-concept prototypes for new projects.",
         "Relevant Skills: Java, AngularJS, Spring Boot, Flowable, Node.js, Schema Form, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, etc."
       ]
     },
