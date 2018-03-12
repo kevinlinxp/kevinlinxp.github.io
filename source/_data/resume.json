@@ -41,22 +41,7 @@
         "Maintain and enhance the Integrated Land Information Systems in both <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SA</a> and NT. Typical tasks are upgrading forms and BPM processes using RDSWB, migrating workflow data, developing new features, fixing bugs and so on.",
         "Developed E-Value, a sub-system that works with SAILIS for property valuation.",
         "Develop quick, proof-of-concept prototypes for new projects.",
-        "Relevant Skills: Java, AngularJS, Spring Boot, Flowable, Node.js, Schema Form, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, etc."
-      ]
-    },
-    {
-      "company": "TextbookMango",
-      "position": "Co-founder and Full Stack Developer",
-      "website": "http://www.textbookmango.com",
-      "startDate": "2014.03",
-      "endDate": "2017.03",
-      "summary": "I was responsible for building, hosting and maintaining our own company's web store (www.textbookmango.com) that rents and sells textbooks to university students.",
-      "highlights": [
-        "Developed front-end CMS pages and promotion widgets.",
-        "Developed back-end functions such as book management, rented books tracking, and promotion management.",
-        "Integrated our website with eWAY.",
-        "Deployed and hosted the website using Git on a CentOS LAMP environment.",
-        "Relevant Skills: JavaScript, JQuery, PHP, Magento, Shell Scripting, CasperJS, OpenCSV, Git, LAMP, CentOS, Web Hosting, etc."
+        "Relevant Skills: Java, AngularJS, Spring, Spring MVC, Spring Boot, Flowable, Node.js, Schema Form, Ajv, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, Docker, AWS, etc."
       ]
     },
     {
@@ -71,7 +56,22 @@
         "Optimised the system's performance, reducing its queries per second from 3000 to 600.",
         "Added international languages support.",
         "Migrated the server to AWS.",
-        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit, Maven, CentOS, Tomcat, MySQL, etc."
+        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit, Maven, AWS, CentOS, Tomcat, MySQL, etc."
+      ]
+    },
+    {
+      "company": "TextbookMango",
+      "position": "Co-founder and Full Stack Developer",
+      "website": "http://www.textbookmango.com",
+      "startDate": "2014.03",
+      "endDate": "2017.03",
+      "summary": "I was responsible for building, hosting and maintaining our own company's web store (www.textbookmango.com) that rents and sells textbooks to university students.",
+      "highlights": [
+        "Developed front-end CMS pages and promotion widgets.",
+        "Developed back-end functions such as book management, rented books tracking, and promotion management.",
+        "Integrated our website with eWAY.",
+        "Deployed and hosted the website using Git on a CentOS LAMP environment.",
+        "Relevant Skills: JavaScript, Java, PHP, Magento, Shell Scripting, CasperJS, OpenCSV, Git, LAMP, CentOS, etc."
       ]
     },
     {
@@ -163,22 +163,34 @@
   "publications": [],
   "skills": [
     {
+      "name": "Foundamental",
+      "level": "Master",
+      "keywords": [
+        "SOLID",
+        "GRASP",
+        "Design Patterns",
+        "Data Structures"
+      ]
+    },
+    {
       "name": "Java",
       "level": "Master",
       "keywords": [
-        "Java",
+        "Java SE/EE",
         "Kotlin",
-        "Spring Framework",
+        "Spring",
+        "Spring MVC",
         "Spring Boot",
+        "Spring Cloud",
         "Hibernate",
-        "JSP",
         "Flowable",
         "JUnit",
-        "Swing",
+        "Mockito",
+        "JSP",
+        "Servlet",
+        "Tomcat",
         "IntelliJ Plugins Development",
-        "Maven",
-        "Ant",
-        "Tomcat"
+        "Swing"
       ]
     },
     {
@@ -190,7 +202,20 @@
         "JavaScript",
         "TypeScript",
         "HTML",
-        "CSS"
+        "CSS",
+        "jQuery",
+        "JSON Schema Form",
+        "Ajv"
+      ]
+    },
+    {
+      "name": "Build/CI/CD",
+      "level": "Master",
+      "keywords": [
+        "Maven",
+        "Gradle",
+        "Ant",
+        "Jenkins"
       ]
     },
     {
@@ -198,48 +223,44 @@
       "level": "Master",
       "keywords": [
         "Gulp",
-        "Karma",
-        "Jasmine",
+        "Bower",
         "Express",
         "EJS",
-        "Bower"
+        "Karma",
+        "Jasmine"
       ]
     },
     {
-      "name": "Foundamental",
+      "name": "Linux/VM",
       "level": "Master",
       "keywords": [
-        "SOLID",
-        "GRASP",
-        "Design Patterns"
-      ]
-    },
-    {
-      "name": "Linux",
-      "level": "Master",
-      "keywords": [
-        "LAMP",
+        "Shell Scripting",
         "CentOS",
-        "Website Hosting"
+        "Ubuntu",
+        "Docker",
+        "AWS"
       ]
     },
     {
-      "name": "Database",
+      "name": "Databases",
       "level": "Master",
       "keywords": [
         "SQL",
-        "Oracle PL/SQL",
-        "MySQL"
+        "Oracle",
+        "MySQL",
+        "MongoDB",
+        "Redis"
       ]
     },
     {
       "name": "Others",
       "level": "Master",
       "keywords": [
-        "RESTful",
-        "AJAX",
+        "Microservices",
+        "RESTful API",
+        "Elasticsearch",
         "Git",
-        "Jenkins"
+        "SVN"
       ]
     }
   ],
