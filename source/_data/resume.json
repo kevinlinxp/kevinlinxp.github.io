@@ -82,11 +82,11 @@
       "endDate": "2013.06",
       "summary": "Worked in IBM Systems Lab Services as a front-end developer for IBM SCE (Smart Cloud Environment, an IaaS platform), as well as being responsible for researching and developing subsidiary projects for IBM SDC (Smart Data Centre).",
       "highlights": [
-        "Created and maintained reusable front-end components for IBM SCE with dojo.",
+        "Created and maintained reusable front-end components for IBM SCE with Dojo.",
         "Planned the architecture and worked out the 3D presentation solutions for the IBM SDC data visualisation applications using WebGL and VTK.",
         "Developed OpenFOAM mesh and boundary condition generation tool that works with VTK to visualise data centre temperature and wind data.",
         "Optimised the data centre sensors control module which increased the data collection rate by 6 times.",
-        "Relevant Skills: Java, Struts 2, Spring, Hibernate, JSP, JavaScript, WebGL, dojo, VTK, OpenFoam, Swing, JWS, etc."
+        "Relevant Skills: Java, Struts 2, Spring, Hibernate, JSP, JavaScript, WebGL, Dojo, VTK, OpenFoam, Swing, JWS, etc."
       ]
     },
     {
