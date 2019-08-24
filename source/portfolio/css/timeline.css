@@ -144,8 +144,17 @@
 }
 
 /** Venders Logo **/
+.i-react:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/logo-react.svg") 50% 50% no-repeat;
+    background-size: 20px;
+}
+
 .i-vue:before {
-	content: "";
+	  content: "";
     display: block;
     width: 40px;
     height: 40px;
@@ -261,6 +270,23 @@
   background-size: 22px;
 }
 
+.i-aws-s3:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-aws-s3.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
+
+.i-aws-cloudformation:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/logo-aws-cloudformation.png") 50% 50% no-repeat;
+  background-size: 22px;
+}
 /******* Hux Branch *****/
 
 /* navbar - dark mode */
@@ -378,24 +404,6 @@ body{
     padding: 5px 0;
 }
 
-@media screen and (min-width: 1281px){
-  .container {
-    max-width: 800px;
-  }
-  .cbp_tmtimeline {
-    max-width: 800px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .container {
-    max-width: 600px;
-  }
-  .cbp_tmtimeline {
-    max-width: 600px;
-  }
-}
-
 @media screen and (max-width: 400px) {
 	.main{
 		padding-bottom: 0px;
@@ -421,3 +429,27 @@ body{
   margin-bottom: 10px;
   color: #737373;
 }
+
+.carousel-reimagine {
+  background: #737373;
+}
+.carousel-reimagine .carousel-item {
+  height: 195px;
+  min-height: 195px;
+  max-height: 300px;
+}
+
+.carousel-reimagine .carousel-item img {
+  max-height: 200px;
+  margin: 0 auto;
+  width: 260px !important;
+}
+
+.carousel-reimagine .carousel-indicators {
+  position: static;
+}
+
+.carousel-reimagine .carousel-control-next, .carousel-reimagine .carousel-control-prev {
+  width: 10%;
+}
+

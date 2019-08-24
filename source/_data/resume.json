@@ -29,12 +29,27 @@
   },
   "work": [
     {
+      "company": "Suncorp Group",
+      "position": "Software Engineer",
+      "website": "https://www.suncorpgroup.com.au/",
+      "startDate": "2018.06",
+      "endDate": "",
+      "summary": "Work across multiple agile teams delivering both green-field insurance sales projects and enhancements.",
+      "highlights": [
+        "(Dev) Core developer of \"Reimagine\" projects - built new AAMI, GIO, SUN motor insurance sales sites from ground-up with React and SpringBoot.",
+        "(DevOps) Create and maintain prod and non-prod CI/CD infrustructure for multiple projects. And being responsible for prod and non-prod releases.",
+        "Tech-lead of two enhancement teams, host daily knowledge sharing sessions (tech huddle)",
+        "On-call support for all insurance sales related projects.",
+        "Relevant Skills: React, Java, Spring Boot, Node.js, Jenkins, AWS, Azure, Groovy, Python, JUnit, Jest, Maven, Gradle, Splunk, etc."
+      ]
+    },
+    {
       "company": "Relational Data Systems",
       "position": "Senior Java Developer",
       "website": "http://relational.com.au/",
       "startDate": "2016.05",
-      "endDate": "",
-      "summary": "Work in agile and waterfall teams as a solution finder and problem solver, being responsible for developing, enhancing and maintaining the company's new and existing projects.",
+      "endDate": "2018.06",
+      "summary": "Worked in agile and waterfall teams as a solution finder and problem solver, being responsible for developing, enhancing and maintaining the company's new and existing projects.",
       "highlights": [
         "Created and being the core developer of RDSWB (Relational Data Systems Workflow Builder), a multi-module and pluggable web system that provides drag-and-drop components for creating large, complex and dynamic forms, as well as to design, deploy, and run workflows.",
         "Maintain Jenkins jobs for RDSWB continuous delivery.",

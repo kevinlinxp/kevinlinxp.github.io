@@ -4,17 +4,75 @@
 <html>
 <head>
   {% include head.html %}
+  <link href="css/bootstrap-skim.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/timeline.css" />
   <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   {% include header.html %}
-
   <main class="main-container">
     <div class="container">
       <div class="main">
         <h1>Portfolio</h1>
         <ul class="cbp_tmtimeline">
+          <li>
+            <div class="cbp_tmlabel">
+              <h2 id="boxoffice">Suncorp Reimagine Projects</h2>
+              <time>2018.12</time>
+              <div class="bd-example">
+                <div id="reimagine-projects" class="carousel slide carousel-reimagine" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-reimagine active">
+                      <a target="_blank" title="Click to visit AAMI" href="https://motor.aami.com.au"><img src="../../../images/quote-AAMI.png" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item carousel-item-reimagine">
+                      <a target="_blank" title="Click to visit GIO" href="https://motor.gio.com.au"><img src="../../../images/quote-GIO.png" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item carousel-item-reimagine">
+                      <a target="_blank" title="Click to visit Suncorp" href="https://motor.suncorp.com.au"><img src="../../../images/quote-Suncorp.png" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item carousel-item-reimagine">
+                      <a target="_blank" title="Click to visit APIA" href="https://motor.apia.com.au"><img src="../../../images/quote-APIA.png" class="d-block w-100"></a>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#reimagine-projects" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#reimagine-projects" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <ol class="carousel-indicators">
+                    <li data-target="#reimagine-projects" data-slide-to="0" class="active"></li>
+                    <li data-target="#reimagine-projects" data-slide-to="1"></li>
+                    <li data-target="#reimagine-projects" data-slide-to="2"></li>
+                    <li data-target="#reimagine-projects" data-slide-to="3"></li>
+                  </ol>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <p>
+                    These green-field projects are built using React, SpringBoot and deployed to AWS S3 and CloudFormation. They bring in simplified, humanised and mobile-first online customer journey to the major motor insurance brands of the company including
+                    <a target="_blank" title="Click to visit AAMI" href="https://motor.aami.com.au">AAMI</a>, <a target="_blank" title="Click to visit GIO" href="https://motor.gio.com.au">GIO</a>, <a target="_blank" title="Click to visit Suncorp" href="https://motor.suncorp.com.au">Suncorp</a> and <a target="_blank" title="Click to visit APIA" href="https://motor.apia.com.au">APIA</a>.
+                  </p>
+                  <p>
+                    I was the main developer of the AAMI and GIO front-end and led multiple production releases. Then became the tead-lead of two teams for optimising all the reimagine projects.
+                  </p>
+                  <p>
+                    The sales of the corresponding products having been uplifted by 5.51% - 15.58% since release, adding more than $30,000,000 annualised incremental GWP to the company.
+                  </p>
+                </li>
+                <li class="skill">
+                  <span class="i-react"></span>
+                  <span class="i-spring-boot"></span>
+                  <span class="i-aws-s3"></span>
+                  <span class="i-aws-cloudformation"></span>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li>
             <div class="cbp_tmlabel">
               <h2 id="boxoffice">Sublime Snippets Support</h2>
@@ -151,6 +209,8 @@
 
   {% include footer.html %}
   {% include github-corner.html %}
+  <script src="../../../js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 
