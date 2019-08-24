@@ -8,11 +8,11 @@
     "website": "http://www.kevinlinxp.com",
     "summary": "I am a full stack Java developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
     "location": {
-      "address": "Level 12, 101 Grenfell Street",
-      "postalCode": "5000",
-      "city": "Adelaide",
+      "address": "Level 6, 10 Shelley Street",
+      "postalCode": "2000",
+      "city": "Sydney",
       "countryCode": "AU",
-      "region": "South Australia"
+      "region": "NSW"
     },
     "profiles": [
       {
@@ -30,7 +30,7 @@
   "work": [
     {
       "company": "Suncorp Group",
-      "position": "Software Engineer",
+      "position": "Software Engineer (Full-time)",
       "website": "https://www.suncorpgroup.com.au/",
       "startDate": "2018.06",
       "endDate": "",
@@ -45,7 +45,7 @@
     },
     {
       "company": "Relational Data Systems",
-      "position": "Senior Java Developer",
+      "position": "Senior Java Developer (Full-time)",
       "website": "http://relational.com.au/",
       "startDate": "2016.05",
       "endDate": "2018.06",
@@ -61,7 +61,7 @@
     },
     {
       "company": "Nymet Australia",
-      "position": "Java Developer",
+      "position": "Java Developer (Contractor)",
       "website": "http://www.nymet.com.au/",
       "startDate": "2015.11",
       "endDate": "2016.04",
