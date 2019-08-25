@@ -36,10 +36,10 @@
       "endDate": "",
       "summary": "Work across multiple agile teams delivering both green-field insurance sales projects and enhancements.",
       "highlights": [
-        "(Dev) Core developer of \"Reimagine\" projects - built new AAMI, GIO, SUN motor insurance sales sites from ground-up with React and SpringBoot.",
-        "(DevOps) Create and maintain prod and non-prod CI/CD infrustructure for multiple projects. And being responsible for prod and non-prod releases.",
-        "Tech-lead of two enhancement teams, host daily knowledge sharing sessions (tech huddle)",
-        "On-call support for all insurance sales related projects.",
+        "(Dev) Core developer of \"Reimagine\" projects - re-built and maintain AAMI, GIO, SUN and APIA motor insurance sales sites from ground-up with React and SpringBoot.",
+        "(DevOps) Create and maintain prod and non-prod CI/CD infrustructure for multiple projects, and being responsible for prod and non-prod releases.",
+        "Tech-lead of two optimisation (features) teams, host daily knowledge sharing sessions (tech huddle)",
+        "On-call support for insurance sales related projects.",
         "Relevant Skills: React, Java, Spring Boot, Node.js, Jenkins, AWS, Azure, Groovy, Python, JUnit, Jest, Maven, Gradle, Splunk, etc."
       ]
     },
