@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Kevin Lin",
-    "label": "Java Software Engineer, Developer",
+    "label": "Full-stack Developer (Java/React)",
     "picture": "/images/kevinlin@blueMt.png",
     "email": "kevinlinxp@gmail.com",
     "phone": "+61 450 095 568",
     "website": "http://www.kevinlinxp.com",
-    "summary": "I am a full stack Java developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
+    "summary": "I am a full stack Java/React developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
     "location": {
       "address": "Level 6, 10 Shelley Street",
       "postalCode": "2000",
@@ -34,13 +34,14 @@
       "website": "https://www.suncorpgroup.com.au/",
       "startDate": "2018.06",
       "endDate": "",
-      "summary": "Work across multiple agile teams delivering both green-field insurance sales projects and enhancements.",
+      "summary": "Work in distributed angile teams and be responsible for building, maintaining, enhancing and releasing multiple insurance sales projects for business owners.",
       "highlights": [
-        "(Dev) Core developer of \"Reimagine\" projects - re-built and maintain AAMI, GIO, SUN and APIA motor insurance sales sites from ground-up with React and SpringBoot.",
-        "(DevOps) Create and maintain prod and non-prod CI/CD infrustructure for multiple projects, and being responsible for prod and non-prod releases.",
-        "Tech-lead of two optimisation (features) teams, host daily knowledge sharing sessions (tech huddle)",
-        "On-call support for insurance sales related projects.",
-        "Relevant Skills: React, Java, Spring Boot, Node.js, Jenkins, AWS, Azure, Groovy, Python, JUnit, Jest, Maven, Gradle, Splunk, etc."
+        "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">SUN</a> and <a href=\"https://motor.apia.com.au\" target=\"_blank\">APIA</a> motor insurance sales SPAs and APIs from ground-up with React and Spring Boot.",
+        "Developed the data analytics integration layer for <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a> and led the development for the other brands.",
+        "Create and maintain CI/CD pipelines; deploy, maintain and support Apps and APIs hosted in AWS and Azure.",
+        "Assistant of the tech-lead; lead and support project releases; host daily knowledge sharing sessions (tech huddle) across two teams.",
+        "Maintain and optimise existing applications.",
+        "Relevant Skills: React, Redux, Java, Spring Boot, Jenkins, AWS, Azure, Groovy, Python, Node.js, WebPack, JUnit, Jest, Maven, Gradle, Splunk, etc."
       ]
     },
     {
@@ -51,12 +52,12 @@
       "endDate": "2018.06",
       "summary": "Worked in agile and waterfall teams as a solution finder and problem solver, being responsible for developing, enhancing and maintaining the company's new and existing projects.",
       "highlights": [
-        "Created and being the core developer of RDSWB (Relational Data Systems Workflow Builder), a multi-module and pluggable web system that provides drag-and-drop components for creating large, complex and dynamic forms, as well as to design, deploy, and run workflows.",
-        "Maintain Jenkins jobs for RDSWB continuous delivery.",
-        "Maintain and enhance the Integrated Land Information Systems in both <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SA</a> and NT. Typical tasks are upgrading forms and BPM processes using RDSWB, migrating workflow data, developing new features, fixing bugs and so on.",
-        "Developed E-Value, a sub-system that works with SAILIS for property valuation.",
-        "Develop quick, proof-of-concept prototypes for new projects.",
-        "Relevant Skills: Java, AngularJS, Spring, Spring MVC, Spring Boot, Flowable, Node.js, Schema Form, Ajv, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, Docker, AWS, etc."
+        "Developed Workflow Builder - a set of pluggable web artefacts that can create and run complex forms and workflows in a drag-and-drop manner.",
+        "Maintained Workflow Builder's CI/CD pipelines.",
+        "Worked on <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SAILIS</a> and ILIS - the SA and NT governments' Integrated Land Information System. Typical tasks are: integrating with Workflow Builder, migrating workflow data, developing new features, fixing bugs and so on.",
+        "Developed E-Value, a sub-system that works with SAILIS for property valuation, with Spring Boot, Spring Security and so on.",
+        "Developed quick, proof-of-concept prototypes for new projects.",
+        "Relevant Skills: Java, AngularJS, Spring, Spring Boot, Spring Security, Flowable, Node.js, Schema Form, Ajv, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, etc."
       ]
     },
     {
@@ -65,13 +66,13 @@
       "website": "http://www.nymet.com.au/",
       "startDate": "2015.11",
       "endDate": "2016.04",
-      "summary": "Worked on project WaterMe, the company's online irrigation controller system.",
+      "summary": "Added multiple features and enhancements to WaterMe, the company's online irrigation controller system.",
       "highlights": [
-        "Developed weather condition and forecast data module that retrieves data from Weather Underground API to enhance automatic watering.",
-        "Optimised the system's performance, reducing its queries per second from 3000 to 600.",
+        "Integrated with Weather Underground API to enhance automatic watering.",
+        "Optimised the system's performance, reducing its database QPS from 3000 to 600.",
         "Added international languages support.",
-        "Migrated the server to AWS.",
-        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit, Maven, AWS, CentOS, Tomcat, MySQL, etc."
+        "Migrated the project to AWS EC2.",
+        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit, Maven, AWS EC2, CentOS, Tomcat, MySQL, etc."
       ]
     },
     {
@@ -191,27 +192,33 @@
       "name": "Java",
       "level": "Master",
       "keywords": [
-        "Java SE/EE",
+        "Java",
         "Kotlin",
         "Spring",
-        "Spring MVC",
+        "Spring Security",
         "Spring Boot",
         "Spring Cloud",
         "Hibernate",
-        "Flowable",
         "JUnit",
         "Mockito",
         "JSP",
         "Servlet",
         "Tomcat",
-        "IntelliJ Plugins Development",
-        "Swing"
+        "IntelliJ Plugin Development",
+        "Swing",
+        "Maven",
+        "Gradle",
+        "Ant"
       ]
     },
     {
-      "name": "Front-end",
+      "name": "Front-end/Node.js",
       "level": "Master",
       "keywords": [
+        "React",
+        "Redux",
+        "Jest",
+        "WebPack",
         "Angular",
         "AngularJS",
         "JavaScript",
@@ -219,41 +226,20 @@
         "HTML",
         "CSS",
         "jQuery",
-        "JSON Schema Form",
-        "Ajv"
-      ]
-    },
-    {
-      "name": "Build/CI/CD",
-      "level": "Master",
-      "keywords": [
-        "Maven",
-        "Gradle",
-        "Ant",
-        "Jenkins"
-      ]
-    },
-    {
-      "name": "Node.js",
-      "level": "Master",
-      "keywords": [
         "Gulp",
-        "Bower",
-        "Express",
-        "EJS",
-        "Karma",
-        "Jasmine"
+        "Bower"
       ]
     },
     {
-      "name": "Linux/VM",
+      "name": "DevOps",
       "level": "Master",
       "keywords": [
-        "Shell Scripting",
-        "CentOS",
-        "Ubuntu",
-        "Docker",
-        "AWS"
+        "AWS",
+        "Azure",
+        "Jenkins",
+        "Groovy",
+        "Python",
+        "Shell Scripting"
       ]
     },
     {
@@ -263,8 +249,7 @@
         "SQL",
         "Oracle",
         "MySQL",
-        "MongoDB",
-        "Redis"
+        "MongoDB"
       ]
     },
     {
@@ -273,7 +258,7 @@
       "keywords": [
         "Microservices",
         "RESTful API",
-        "Elasticsearch",
+        "Splunk",
         "Git",
         "SVN"
       ]
