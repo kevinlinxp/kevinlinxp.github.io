@@ -5,7 +5,6 @@
     "picture": "/images/kevinlin@blueMt.png",
     "email": "kevinlinxp@gmail.com",
     "phone": "+61 450 095 568",
-    "website": "http://www.kevinlinxp.com",
     "summary": "I am a full stack Java/React developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
     "location": {
       "address": "Level 6, 10 Shelley Street",
@@ -16,14 +15,32 @@
     },
     "profiles": [
       {
+        "network": "Home",
+        "username": "",
+        "url": "/",
+        "iconClassNamePrefix": "icon1",
+        "target": ""
+      },
+      {
+        "network": "Portfolio",
+        "username": "",
+        "url": "/portfolio",
+        "iconClassNamePrefix": "icon1",
+        "target": ""
+      },
+      {
         "network": "LinkedIn",
         "username": "",
-        "url": "https://linkedin.com/in/kevinlinxp"
+        "url": "https://linkedin.com/in/kevinlinxp",
+        "iconClassNamePrefix": "icon",
+        "target": "_blank"
       },
       {
         "network": "Github",
         "username": "",
-        "url": "https://github.com/kevinlinxp"
+        "url": "https://github.com/kevinlinxp",
+        "iconClassNamePrefix": "icon",
+        "target": "_blank"
       }
     ]
   },

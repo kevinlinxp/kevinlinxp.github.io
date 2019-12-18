@@ -21,6 +21,17 @@ permalink: /resume/index.html
       font-style: normal;
     }
 
+    @font-face {
+      font-family: 'icomoon1';
+      src:  url('./icomoon1/icomoon.eot');
+      src:  url('./icomoon1/icomoon.eot#iefix.eot') format('embedded-opentype'),
+      url('./icomoon1/icomoon.ttf') format('truetype'),
+      url('./icomoon1/icomoon.woff') format('woff'),
+      url('./icomoon1/icomoon.svg#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     [class^="icon-"],
     [class*=" icon-"] {
       /* use !important to prevent issues with browser extensions that change fonts */
@@ -35,6 +46,32 @@ permalink: /resume/index.html
       /* Better Font Rendering =========== */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+
+    [class^="icon1-"],
+    [class*=" icon1-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon1' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      font-size: 1.85em !important;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon1-home:before {
+      content: "\e900";
+    }
+
+    .icon1-portfolio:before {
+      content: "\e90e";
     }
 
     .icon-instagram:before {
@@ -277,7 +314,6 @@ permalink: /resume/index.html
     .icon-board:before {
       content: "\e608";
     }
-
 
     .relative {
       position: relative;
@@ -548,7 +584,7 @@ permalink: /resume/index.html
     }
     /*
     Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
-*/
+    */
 
     .floating-nav-trigger {
       width: 50px;
@@ -1203,23 +1239,23 @@ permalink: /resume/index.html
       </nav>
       <section class="col-md-3 card-wrapper profile-card-wrapper affix">
         <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="{{ site.data.resume.basics.name }}" src="../images/kevinlin@blueMt.png" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>{{ site.data.resume.basics.name }}</b></h3><h5 class="text-muted" itemprop="jobTitle">{{ site.data.resume.basics.label }}</h5></div></span>
-          <hr/>
-          <div class="contact-details clearfix">
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">{{ site.data.resume.basics.location.address }}, {{ site.data.resume.basics.location.city }}, {{ site.data.resume.basics.location.region }}, {{ site.data.resume.basics.location.countryCode }}, {{ site.data.resume.basics.location.postalCode }}</span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">{{ site.data.resume.basics.phone }}</span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:{{ site.data.resume.basics.email }}" itemprop="email">{{ site.data.resume.basics.email }}</a></span></div>
-            <div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="{{ site.data.resume.basics.website }}" target="_blank">{{ site.data.resume.basics.website }}</a></span></div>
-            <div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">{{ site.data.resume.languages | map: 'language' | join: ', ' }}</span></div>
+        <hr/>
+        <div class="contact-details clearfix">
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">{{ site.data.resume.basics.location.address }}, {{ site.data.resume.basics.location.city }}, {{ site.data.resume.basics.location.region }}, {{ site.data.resume.basics.location.countryCode }}, {{ site.data.resume.basics.location.postalCode }}</span></div>
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">{{ site.data.resume.basics.phone }}</span></div>
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:{{ site.data.resume.basics.email }}" itemprop="email">{{ site.data.resume.basics.email }}</a></span></div>
+          <div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">{{ site.data.resume.languages | map: 'language' | join: ', ' }}</span></div>
+        </div>
+        <hr/>
+        <div class="social-links text-center">
+          <div>
+            {% for profile in site.data.resume.basics.profiles %}
+            <!-- {% capture icomoon %}icon{% if forloop.index == 1 %}1{% else %}{% endif %}{% endcapture %} -->
+            <a class="fs-2x social-link link-{{ profile.network | downcase }} {{profile.iconClassNamePrefix}}-{{ profile.network | downcase }}" href="{{ profile.url }}"
+            target="{{ profile.target }}" data-toggle="tooltip" title="{{ profile.network }}"></a>
+            {% endfor %}
           </div>
-          <hr/>
-          <div class="social-links text-center">
-            <div>
-              {% for profile in site.data.resume.basics.profiles %}
-                <a class="fs-2x social-link link-{{ profile.network | downcase }} icon-{{ profile.network | downcase }}" href="{{ profile.url }}"
-                target="_blank" data-toggle="tooltip" title="{{ site.data.resume.basics.name }} on {{ profile.network }}"></a>
-              {% endfor %}
-         </div>
-          </div>
+        </div>
       </section>
       <section class="col-md-9 card-wrapper pull-right">
         <div class="card background-card">
@@ -1245,16 +1281,16 @@ permalink: /resume/index.html
                     {% for skill in site.data.resume.skills %}
                     <li class="card card-nested card-skills">
                       <div class="skill-level" data-toggle="tooltip" title="{{ skill.level }}" data-placement="left">
-                          <div class="skill-progress {{ skill.level | downcase }}"></div>
+                        <div class="skill-progress {{ skill.level | downcase }}"></div>
+                      </div>
+                      <div class="skill-info"><strong>{{ skill.name }}</strong>
+                        <div class="space-top labels">
+                          {% for keyword in skill.keywords %}
+                          <span class="label label-keyword">{{ keyword }}</span>
+                          {% endfor %}
                         </div>
-                        <div class="skill-info"><strong>{{ skill.name }}</strong>
-                          <div class="space-top labels">
-                            {% for keyword in skill.keywords %}
-                            <span class="label label-keyword">{{ keyword }}</span>
-                            {% endfor %}
-                          </div>
-                        </div>
-                      </li>
+                      </div>
+                    </li>
                     {% endfor %}
                   </ul>
                 </div>
@@ -1265,46 +1301,46 @@ permalink: /resume/index.html
               <div class="info">
                 <h4 class="title text-uppercase">Work Experience</h4>
                 <ul class="list-unstyled clear-margin">
-                {% for work in site.data.resume.work %}
+                  {% for work in site.data.resume.work %}
                   <li class="card card-nested clearfix">
                     <div class="content">
                       <p class="clear-margin relative">
                         {% if work.endDate == '' %}
-                          <i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
+                        <i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
                         {% endif %}
                         <strong>{{ work.position }}</strong>,&nbsp;<a href="{{ work.website }}" target="_blank">{{ work.company }}</a>
                       </p>
                       <p class="text-muted">
                         <small>
                           <span class="space-right">
-                          {% capture startYear %}
+                            {% capture startYear %}
                             {{ work.startDate | split:'.' | first }}
-                          {% endcapture %}
-                          {% capture startMonth %}
+                            {% endcapture %}
+                            {% capture startMonth %}
                             {{ work.startDate | split:'.' | last }}
-                          {% endcapture %}
-                          {% assign startMonth = startMonth | times:1 %}
-                          {% case startMonth %}
-                          {% when 1 %} Jan,
-                          {% when 2 %} Feb,
-                          {% when 3 %} Mar,
-                          {% when 4 %} Apr,
-                          {% when 5 %} May,
-                          {% when 6 %} Jun,
-                          {% when 7 %} Jul,
-                          {% when 8 %} Aug,
-                          {% when 9 %} Sep,
-                          {% when 10 %} Oct,
-                          {% when 11 %} Nov,
-                          {% when 12 %} Dec,
-                          {% endcase %}
-                          {{ startYear }} -
-                          {% if work.endDate != '' %}
+                            {% endcapture %}
+                            {% assign startMonth = startMonth | times:1 %}
+                            {% case startMonth %}
+                            {% when 1 %} Jan,
+                            {% when 2 %} Feb,
+                            {% when 3 %} Mar,
+                            {% when 4 %} Apr,
+                            {% when 5 %} May,
+                            {% when 6 %} Jun,
+                            {% when 7 %} Jul,
+                            {% when 8 %} Aug,
+                            {% when 9 %} Sep,
+                            {% when 10 %} Oct,
+                            {% when 11 %} Nov,
+                            {% when 12 %} Dec,
+                            {% endcase %}
+                            {{ startYear }} -
+                            {% if work.endDate != '' %}
                             {% capture endYear %}
-                              {{ work.endDate | split:'.' | first }}
+                            {{ work.endDate | split:'.' | first }}
                             {% endcapture %}
                             {% capture endMonth %}
-                              {{ work.endDate | split:'.' | last }}
+                            {{ work.endDate | split:'.' | last }}
                             {% endcapture %}
                             {% assign endMonth = endMonth | times:1 %}
                             {% case endMonth %}
@@ -1323,322 +1359,322 @@ permalink: /resume/index.html
                             {% endcase %}
                             {{ endYear }}
                           </span><span>
-                             {% capture startTotalMonth %}
-                               {{ startYear | times:12 | plus:startMonth }}
-                             {% endcapture %}
-                             {% capture endTotalMonth %}
-                               {{ endYear | times:12 | plus:endMonth }}
-                             {% endcapture %}
-                             {% capture totalMonthsWorked %}
-                               {{ endTotalMonth | minus:startTotalMonth }}
-                             {% endcapture %}
-                             {% capture yearsWorked %}
-                               {{ totalMonthsWorked | divided_by:12 }}
-                             {% endcapture %}
-                             {% assign yearsWorked = yearsWorked | times:1 %}
-                             {% capture monthsWorkedInTheLastYear %}
-                               {{ totalMonthsWorked | modulo:12 }}
-                             {% endcapture %}
-                             {% assign monthsWorkedInTheLastYear = monthsWorkedInTheLastYear | times:1 %}
-                            <i class="icon-clock mr-5"></i>
-                            {% if yearsWorked > 0 %}
-                              {{ yearsWorked }}
-                              {% if yearsWorked == 1 %}
-                                year
-                              {% else %}
-                                years
-                              {% endif %}
-                            {% endif %}
-                            {% if monthsWorkedInTheLastYear > 0 %}
-                              {{ monthsWorkedInTheLastYear }}
-                              {% if monthsWorkedInTheLastYear == 1 %}
-                                month
-                              {% else %}
-                                months
-                              {% endif %}
-                            {% endif %}
-                          {% else %}
-                            Present
-                          {% endif %}
-                          </span>
+                           {% capture startTotalMonth %}
+                           {{ startYear | times:12 | plus:startMonth }}
+                           {% endcapture %}
+                           {% capture endTotalMonth %}
+                           {{ endYear | times:12 | plus:endMonth }}
+                           {% endcapture %}
+                           {% capture totalMonthsWorked %}
+                           {{ endTotalMonth | minus:startTotalMonth }}
+                           {% endcapture %}
+                           {% capture yearsWorked %}
+                           {{ totalMonthsWorked | divided_by:12 }}
+                           {% endcapture %}
+                           {% assign yearsWorked = yearsWorked | times:1 %}
+                           {% capture monthsWorkedInTheLastYear %}
+                           {{ totalMonthsWorked | modulo:12 }}
+                           {% endcapture %}
+                           {% assign monthsWorkedInTheLastYear = monthsWorkedInTheLastYear | times:1 %}
+                           <i class="icon-clock mr-5"></i>
+                           {% if yearsWorked > 0 %}
+                           {{ yearsWorked }}
+                           {% if yearsWorked == 1 %}
+                           year
+                           {% else %}
+                           years
+                           {% endif %}
+                           {% endif %}
+                           {% if monthsWorkedInTheLastYear > 0 %}
+                           {{ monthsWorkedInTheLastYear }}
+                           {% if monthsWorkedInTheLastYear == 1 %}
+                           month
+                           {% else %}
+                           months
+                           {% endif %}
+                           {% endif %}
+                           {% else %}
+                           Present
+                           {% endif %}
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>{{ work.summary }}</p>
+                    </div>
+                    <ul>
+                      {% for highlight in work.highlights %}
+                      <li class="mop-wrapper">
+                        <p>{{ highlight }}</p>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="detail" id="education">
+            <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Education</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  {% for edu in site.data.resume.education %}
+                  {% capture startYear %}
+                  {{ edu.startDate | split:'.' | first }}
+                  {% endcapture %}
+                  {% capture startMonth %}
+                  {{ edu.startDate | split:'.' | last }}
+                  {% endcapture %}
+                  {% assign startMonth = startMonth | times:1 %}
+
+                  {% capture endYear %}
+                  {{ edu.endDate | split:'.' | first }}
+                  {% endcapture %}
+                  {% capture endMonth %}
+                  {{ edu.endDate | split:'.' | last }}
+                  {% endcapture %}
+                  {% assign endMonth = endMonth | times:1 %}
+
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        <strong>{{ edu.area }}, {{ edu.studyType }},&nbsp;</strong>
+                        {{ edu.institution }}
+                      </p>
+                      <p class="text-muted clear-margin">
+                        <small>
+                          {% case startMonth %}
+                          {% when 1 %} Jan,
+                          {% when 2 %} Feb,
+                          {% when 3 %} Mar,
+                          {% when 4 %} Apr,
+                          {% when 5 %} May,
+                          {% when 6 %} Jun,
+                          {% when 7 %} Jul,
+                          {% when 8 %} Aug,
+                          {% when 9 %} Sep,
+                          {% when 10 %} Oct,
+                          {% when 11 %} Nov,
+                          {% when 12 %} Dec,
+                          {% endcase %} {{ startYear }} -
+                          {% case endMonth %}
+                          {% when 1 %} Jan,
+                          {% when 2 %} Feb,
+                          {% when 3 %} Mar,
+                          {% when 4 %} Apr,
+                          {% when 5 %} May,
+                          {% when 6 %} Jun,
+                          {% when 7 %} Jul,
+                          {% when 8 %} Aug,
+                          {% when 9 %} Sep,
+                          {% when 10 %} Oct,
+                          {% when 11 %} Nov,
+                          {% when 12 %} Dec,
+                          {% endcase %} {{ endYear }}
                         </small>
                       </p>
-                      <div class="mop-wrapper space-bottom">
-                        <p>{{ work.summary }}</p>
-                      </div>
-                      <ul>
-                      {% for highlight in work.highlights %}
-                        <li class="mop-wrapper">
-                          <p>{{ highlight }}</p>
-                        </li>
-                      {% endfor %}
-                      </ul>
+                      <i></i>
                     </div>
                   </li>
-                {% endfor %}
+                  {% endfor %}
                 </ul>
               </div>
             </div>
-            <div class="detail" id="education">
-              <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
-              <div class="info">
-                <h4 class="title text-uppercase">Education</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for edu in site.data.resume.education %}
-                      {% capture startYear %}
-                        {{ edu.startDate | split:'.' | first }}
-                      {% endcapture %}
-                      {% capture startMonth %}
-                        {{ edu.startDate | split:'.' | last }}
-                      {% endcapture %}
-                      {% assign startMonth = startMonth | times:1 %}
-
-                      {% capture endYear %}
-                        {{ edu.endDate | split:'.' | first }}
-                      {% endcapture %}
-                      {% capture endMonth %}
-                        {{ edu.endDate | split:'.' | last }}
-                      {% endcapture %}
-                      {% assign endMonth = endMonth | times:1 %}
-
-                      <li class="card card-nested">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>{{ edu.area }}, {{ edu.studyType }},&nbsp;</strong>
-                            {{ edu.institution }}
-                          </p>
-                          <p class="text-muted clear-margin">
-                            <small>
-                            {% case startMonth %}
-                              {% when 1 %} Jan,
-                              {% when 2 %} Feb,
-                              {% when 3 %} Mar,
-                              {% when 4 %} Apr,
-                              {% when 5 %} May,
-                              {% when 6 %} Jun,
-                              {% when 7 %} Jul,
-                              {% when 8 %} Aug,
-                              {% when 9 %} Sep,
-                              {% when 10 %} Oct,
-                              {% when 11 %} Nov,
-                              {% when 12 %} Dec,
-                            {% endcase %} {{ startYear }} -
-                            {% case endMonth %}
-                              {% when 1 %} Jan,
-                              {% when 2 %} Feb,
-                              {% when 3 %} Mar,
-                              {% when 4 %} Apr,
-                              {% when 5 %} May,
-                              {% when 6 %} Jun,
-                              {% when 7 %} Jul,
-                              {% when 8 %} Aug,
-                              {% when 9 %} Sep,
-                              {% when 10 %} Oct,
-                              {% when 11 %} Nov,
-                              {% when 12 %} Dec,
-                            {% endcase %} {{ endYear }}
-                            </small>
-                          </p>
-                          <i></i>
-                        </div>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="detail" id="awards">
-              <div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div>
-              <div class="info">
-                <h4 class="title text-uppercase">Awards</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for award in site.data.resume.awards %}
-                      {% capture year %}
-                        {{ award.date | split:'.' | first }}
-                      {% endcapture %}
-                      {% capture month %}
-                        {{ award.date | slice:5,2 }}
-                      {% endcapture %}
-                      {% assign month = month | times:1 %}
-                      {% capture dayOfMonth %}
-                        {{ award.date | split:'.' | last }}
-                      {% endcapture %}
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin" itemprop="award"><strong>{{ award.title }},</strong> {{ award.awarder }}</p>
-                        <p class="text-muted"><small>Awarded on:
-                          {% case month %}
-                            {% when 1 %} Jan
-                            {% when 2 %} Feb
-                            {% when 3 %} Mar
-                            {% when 4 %} Apr
-                            {% when 5 %} May
-                            {% when 6 %} Jun
-                            {% when 7 %} Jul
-                            {% when 8 %} Aug
-                            {% when 9 %} Sep
-                            {% when 10 %} Oct
-                            {% when 11 %} Nov
-                            {% when 12 %} Dec
-                          {% endcase %} {{ dayOfMonth }}, {{ year }}</small></p>
-                        {% if award.summary %}
-                        <div class="mop-wrapper">
-                          <p>{{ award.summary }}</p>
-                        </div>
-                        {% endif %}
+          </div>
+          <div class="detail" id="awards">
+            <div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Awards</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  {% for award in site.data.resume.awards %}
+                  {% capture year %}
+                  {{ award.date | split:'.' | first }}
+                  {% endcapture %}
+                  {% capture month %}
+                  {{ award.date | slice:5,2 }}
+                  {% endcapture %}
+                  {% assign month = month | times:1 %}
+                  {% capture dayOfMonth %}
+                  {{ award.date | split:'.' | last }}
+                  {% endcapture %}
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin" itemprop="award"><strong>{{ award.title }},</strong> {{ award.awarder }}</p>
+                      <p class="text-muted"><small>Awarded on:
+                        {% case month %}
+                        {% when 1 %} Jan
+                        {% when 2 %} Feb
+                        {% when 3 %} Mar
+                        {% when 4 %} Apr
+                        {% when 5 %} May
+                        {% when 6 %} Jun
+                        {% when 7 %} Jul
+                        {% when 8 %} Aug
+                        {% when 9 %} Sep
+                        {% when 10 %} Oct
+                        {% when 11 %} Nov
+                        {% when 12 %} Dec
+                      {% endcase %} {{ dayOfMonth }}, {{ year }}</small></p>
+                      {% if award.summary %}
+                      <div class="mop-wrapper">
+                        <p>{{ award.summary }}</p>
                       </div>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
+                      {% endif %}
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
               </div>
             </div>
-            <div class="detail" id="volunteer-work">
-              <div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div>
-              <div class="info">
-                <h4 class="title text-uppercase">Volunteer Work</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for volunteerWork in site.data.resume.volunteer %}
-                    {% capture startYear %}
-                      {{ volunteerWork.startDate | split:'.' | first }}
-                    {% endcapture %}
-                    {% capture startMonth %}
-                      {{ volunteerWork.startDate | split:'.' | last }}
-                    {% endcapture %}
-                    {% assign startMonth = startMonth | times:1 %}
+          </div>
+          <div class="detail" id="volunteer-work">
+            <div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Volunteer Work</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  {% for volunteerWork in site.data.resume.volunteer %}
+                  {% capture startYear %}
+                  {{ volunteerWork.startDate | split:'.' | first }}
+                  {% endcapture %}
+                  {% capture startMonth %}
+                  {{ volunteerWork.startDate | split:'.' | last }}
+                  {% endcapture %}
+                  {% assign startMonth = startMonth | times:1 %}
 
-                    {% capture endYear %}
-                      {{ volunteerWork.endDate | split:'.' | first }}
-                    {% endcapture %}
-                    {% capture endMonth %}
-                      {{ volunteerWork.endDate | split:'.' | last }}
-                    {% endcapture %}
-                    {% assign endMonth = endMonth | times:1 %}
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin relative"><strong>{{ volunteerWork.position }}, </strong><a href="{{ volunteerWork.website }}" target="_blank">{{ volunteerWork.organization }}</a></p>
-                        <p class="text-muted">
-                          <small>
-                            {% case startMonth %}
-                              {% when 1 %} Jan,
-                              {% when 2 %} Feb,
-                              {% when 3 %} Mar,
-                              {% when 4 %} Apr,
-                              {% when 5 %} May,
-                              {% when 6 %} Jun,
-                              {% when 7 %} Jul,
-                              {% when 8 %} Aug,
-                              {% when 9 %} Sep,
-                              {% when 10 %} Oct,
-                              {% when 11 %} Nov,
-                              {% when 12 %} Dec,
-                            {% endcase %} {{ startYear }} -
-                            {% case endMonth %}
-                              {% when 1 %} Jan,
-                              {% when 2 %} Feb,
-                              {% when 3 %} Mar,
-                              {% when 4 %} Apr,
-                              {% when 5 %} May,
-                              {% when 6 %} Jun,
-                              {% when 7 %} Jul,
-                              {% when 8 %} Aug,
-                              {% when 9 %} Sep,
-                              {% when 10 %} Oct,
-                              {% when 11 %} Nov,
-                              {% when 12 %} Dec,
-                            {% endcase %} {{ endYear }}
-                          </small>
-                        </p>
-                        <div class="mop-wrapper"></div>
-                        <ul>
-                          {% for highlight in volunteerWork.highlights %}
-                            <li class="mop-wrapper">
-                              <p>{{ highlight }}</p>
-                            </li>
-                          {% endfor %}
-                        </ul>
-                      </div>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="detail" id="interests">
-              <div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div>
-              <div class="info">
-                <h4 class="title text-uppercase">Interests</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for interest in site.data.resume.interests %}
-                    <li class="card card-nested">
-                      <p><strong>{{ interest.name }}</strong></p>
-                      <div class="space-top labels">
-                        {% for keyword in interest.keywords %}
-                        <span class="label label-keyword">
-                          {{ keyword }}
-                        </span>
+                  {% capture endYear %}
+                  {{ volunteerWork.endDate | split:'.' | first }}
+                  {% endcapture %}
+                  {% capture endMonth %}
+                  {{ volunteerWork.endDate | split:'.' | last }}
+                  {% endcapture %}
+                  {% assign endMonth = endMonth | times:1 %}
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>{{ volunteerWork.position }}, </strong><a href="{{ volunteerWork.website }}" target="_blank">{{ volunteerWork.organization }}</a></p>
+                      <p class="text-muted">
+                        <small>
+                          {% case startMonth %}
+                          {% when 1 %} Jan,
+                          {% when 2 %} Feb,
+                          {% when 3 %} Mar,
+                          {% when 4 %} Apr,
+                          {% when 5 %} May,
+                          {% when 6 %} Jun,
+                          {% when 7 %} Jul,
+                          {% when 8 %} Aug,
+                          {% when 9 %} Sep,
+                          {% when 10 %} Oct,
+                          {% when 11 %} Nov,
+                          {% when 12 %} Dec,
+                          {% endcase %} {{ startYear }} -
+                          {% case endMonth %}
+                          {% when 1 %} Jan,
+                          {% when 2 %} Feb,
+                          {% when 3 %} Mar,
+                          {% when 4 %} Apr,
+                          {% when 5 %} May,
+                          {% when 6 %} Jun,
+                          {% when 7 %} Jul,
+                          {% when 8 %} Aug,
+                          {% when 9 %} Sep,
+                          {% when 10 %} Oct,
+                          {% when 11 %} Nov,
+                          {% when 12 %} Dec,
+                          {% endcase %} {{ endYear }}
+                        </small>
+                      </p>
+                      <div class="mop-wrapper"></div>
+                      <ul>
+                        {% for highlight in volunteerWork.highlights %}
+                        <li class="mop-wrapper">
+                          <p>{{ highlight }}</p>
+                        </li>
                         {% endfor %}
-                      </div>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
+                      </ul>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="detail" id="interests">
+            <div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Interests</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  {% for interest in site.data.resume.interests %}
+                  <li class="card card-nested">
+                    <p><strong>{{ interest.name }}</strong></p>
+                    <div class="space-top labels">
+                      {% for keyword in interest.keywords %}
+                      <span class="label label-keyword">
+                        {{ keyword }}
+                      </span>
+                      {% endfor %}
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
       </div>
-    </div>
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="./bootstrap-3.3.6/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-        var toggleFloatingMenu = function () {
-          $('.js-floating-nav').toggleClass('is-visible');
-          $('.js-floating-nav-trigger').toggleClass('is-open');
-        };
+    </section>
+  </div>
+</div>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="./bootstrap-3.3.6/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    var toggleFloatingMenu = function () {
+      $('.js-floating-nav').toggleClass('is-visible');
+      $('.js-floating-nav-trigger').toggleClass('is-open');
+    };
 
-        $(".background-card").css("min-height", window.screen.availHeight + "px");
-        $("[data-toggle=tooltip]").tooltip();
-        $('.js-floating-nav-trigger').on('click', function (e) {
-          e.preventDefault();
-          toggleFloatingMenu();
-        });
-        $('.js-floating-nav a').on('click', toggleFloatingMenu);
+    $(".background-card").css("min-height", window.screen.availHeight + "px");
+    $("[data-toggle=tooltip]").tooltip();
+    $('.js-floating-nav-trigger').on('click', function (e) {
+      e.preventDefault();
+      toggleFloatingMenu();
+    });
+    $('.js-floating-nav a').on('click', toggleFloatingMenu);
 
-        $("#remaining-profiles").on('show.bs.collapse', function () {
-          $('.js-profiles-collapse > i')
-            .removeClass('icon-chevron-down')
-            .addClass('icon-chevron-up');
-        });
+    $("#remaining-profiles").on('show.bs.collapse', function () {
+      $('.js-profiles-collapse > i')
+      .removeClass('icon-chevron-down')
+      .addClass('icon-chevron-up');
+    });
 
-        $("#remaining-profiles").on('hidden.bs.collapse', function () {
-          $('.js-profiles-collapse > i')
-            .removeClass('icon-chevron-up')
-            .addClass('icon-chevron-down');
-        });
-      });
-    </script>
-    <script>
-      WebFontConfig = {
+    $("#remaining-profiles").on('hidden.bs.collapse', function () {
+      $('.js-profiles-collapse > i')
+      .removeClass('icon-chevron-up')
+      .addClass('icon-chevron-down');
+    });
+  });
+</script>
+<script>
+  WebFontConfig = {
         // google: { families: ['Lato:300,400,700:latin'] }
         google: { families: ['Open+Sans:300,400,700'] }
       };
       (function () {
         var wf = document.createElement('script');
         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
         wf.type = 'text/javascript';
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
-</body>
+  </body>
 
-</html>
+  </html>
