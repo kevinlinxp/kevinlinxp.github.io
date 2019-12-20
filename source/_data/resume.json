@@ -51,7 +51,7 @@
       "website": "https://www.suncorpgroup.com.au/",
       "startDate": "2018.06",
       "endDate": "",
-      "summary": "Work in distributed agile teams that build, maintain, enhance, and release multiple insurance sales projects for business owners. The scope includes motor, motorcycle, home, and health insurance products of AAMI, GIO, Suncorp, and APIA.",
+      "summary": "Work in distributed agile teams that build, maintain, enhance, and release insurance sales projects for business owners. The scope includes insurance products of motor, motorcycle, home, and health of multiple brands such as AAMI, GIO, Suncorp, and APIA.",
       "highlights": [
         "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">Suncorp</a>, and <a href=\"https://motor.apia.com.au\" target=\"_blank\">APIA</a> motor insurance sales SPAs (Single Page Applications) and APIs from ground-up with React and Spring Boot.",
         "Developed the data analytics integration layer for the <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a> motor insurance SPA and led the development for the other brands.",
