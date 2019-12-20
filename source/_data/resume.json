@@ -5,7 +5,7 @@
     "picture": "/images/kevinlin@blueMt.png",
     "email": "kevinlinxp@gmail.com",
     "phone": "+61 450 095 568",
-    "summary": "I am a full stack Java/React developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies - traditional or cutting-edge - to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
+    "summary": "I am a full stack Java/React developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies, traditional or cutting-edge, to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.",
     "location": {
       "address": "Level 6, 10 Shelley Street",
       "postalCode": "2000",
@@ -51,11 +51,11 @@
       "website": "https://www.suncorpgroup.com.au/",
       "startDate": "2018.06",
       "endDate": "",
-      "summary": "Work in distributed angile teams and be responsible for building, maintaining, enhancing and releasing multiple insurance sales projects for business owners.",
+      "summary": "Work in distributed agile teams that build, maintain, enhance, and release multiple insurance sales projects for business owners. The scope includes motor, motorcycle, home, and health insurance products of AAMI, GIO, Suncorp, and APIA.",
       "highlights": [
-        "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">SUN</a> and <a href=\"https://motor.apia.com.au\" target=\"_blank\">APIA</a> motor insurance sales SPAs and APIs from ground-up with React and Spring Boot.",
-        "Developed the data analytics integration layer for <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a> and led the development for the other brands.",
-        "Create and maintain CI/CD pipelines; deploy, maintain and support Apps and APIs hosted in AWS and Azure.",
+        "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">Suncorp</a>, and <a href=\"https://motor.apia.com.au\" target=\"_blank\">APIA</a> motor insurance sales SPAs (Single Page Applications) and APIs from ground-up with React and Spring Boot.",
+        "Developed the data analytics integration layer for the <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a> motor insurance SPA and led the development for the other brands.",
+        "Create and maintain CI/CD pipelines; deploy, maintain, and support Apps and APIs hosted in AWS and Azure.",
         "Assistant of the tech-lead; lead and support project releases; host daily knowledge sharing sessions (tech huddle) across two teams.",
         "Maintain and optimise existing applications.",
         "Relevant Skills: React, Redux, Java, Spring Boot, Jenkins, AWS, Azure, Groovy, Python, Node.js, WebPack, JUnit, Jest, Maven, Gradle, Splunk, etc."
@@ -128,7 +128,7 @@
       "website": "http://www.yonyouaud.com/",
       "startDate": "2009.10",
       "endDate": "2011.02",
-      "summary": "Worked as a Java programmer for the maintenance and new feature development tasks of UFIDA Online Audit System, a Java C/S system based on UAP-NC platform focusing on massive audit data collecting and analysing",
+      "summary": "Worked as a Java developer for the maintenance and new feature development tasks of UFIDA Online Audit System, a Java C/S system based on UAP-NC platform focusing on massive audit data collecting and analysing",
       "highlights": [
         "Maintained the “Query Engine” module which helps users with no or limited SQL knowledge to browse, analyse and report audit data.",
         "Participated in the whole process upgrading our product from version 5.0 to 5.5. Designed and implemented new features according to user requirements.",
