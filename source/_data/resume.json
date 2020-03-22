@@ -51,45 +51,47 @@
       "website": "https://www.suncorpgroup.com.au/",
       "startDate": "2018.06",
       "endDate": "",
-      "summary": "Work in distributed agile teams that build, maintain, enhance, and release insurance sales projects for business owners. The scope includes insurance products of motor, motorcycle, home, and health of multiple brands such as AAMI, GIO, Suncorp, and APIA.",
+      "summary": "Building and maintaining insurance sales applications and APIs for multiple brands (AAMI, Suncorp, GIO, APIA) and products (Car, Home, Motorcycle, Dealer, Health) of Suncorp Group.",
       "highlights": [
-        "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">Suncorp</a>, and <a href=\"https://motor.apia.com.au\" target=\"_blank\">APIA</a> motor insurance sales SPAs (Single Page Applications) and APIs from ground-up with React and Spring Boot.",
-        "Developed the data analytics integration layer for the <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a> motor insurance SPA and led the development for the other brands.",
-        "Create and maintain CI/CD pipelines; deploy, maintain, and support Apps and APIs hosted in AWS and Azure.",
-        "Assistant of the tech-lead; lead and support project releases; host daily knowledge sharing sessions (tech huddle) across two teams.",
-        "Maintain and optimise existing applications.",
-        "Relevant Skills: React, Redux, Java, Spring Boot, Jenkins, AWS, Azure, Groovy, Python, Node.js, WebPack, JUnit, Jest, Maven, Gradle, Splunk, etc."
+        "Rebuilt <a href=\"https://motor.aami.com.au\" target=\"_blank\">AAMI</a>, <a href=\"https://motor.gio.com.au\" target=\"_blank\">GIO</a>, and <a href=\"https://motor.suncorp.com.au\" target=\"_blank\">Suncorp</a> motor insurance sales SPAs (Single Page Applications) and APIs from ground-up with React and Spring Boot. These new experiences increased FY19 GWP (Gross Written Premiums) per brand by 5.32% (AAMI), 15.58% (GIO) and 15.19% (Suncorp).",
+        "Designed consistent Redux store and API contract across 3 teams.",
+        "Developed React HOC and Redux middleware that collect and report analytics data from 40 web pages per each brand.",
+        "Led the successful production release of GIO Car Insurance UI.",
+        "The “go-to” guy during the partner transition period for two teams, 12 people.",
+        "Improved CI/CD by using declarative pipelines; decoupled Jenkins nodes from code and reorganising credentials and service accounts.",
+        "Relevant Skills: React, Redux, Node.js, Webpack, S3, CloudFront; Java, Spring Boot, OAuth2, Axway, OpenShift, EC2; Jenkins, Groovy, Python, Ansible, CloudFormation, etc."
       ]
     },
     {
       "company": "Relational Data Systems",
-      "position": "Senior Java Developer (Full-time)",
-      "website": "http://relational.com.au/",
+      "position": "Java Developer (Full-time)",
+      "website": "https://relational.com.au/",
       "startDate": "2016.05",
       "endDate": "2018.06",
-      "summary": "Worked in agile and waterfall teams as a solution finder and problem solver, being responsible for developing, enhancing and maintaining the company's new and existing projects.",
+      "summary": "Worked in agile and waterfall teams as a solution engineer and problem solver for the company’s new initiatives (Workflow Builder) and existing projects (Integrated Land Information Systems).",
       "highlights": [
-        "Developed Workflow Builder - a set of pluggable web artefacts that can create and run complex forms and workflows in a drag-and-drop manner.",
+        "Developed Workflow Builder - a set of pluggable web artefacts that can create and run workflows in a drag-and-drop manner. It reduces the cost of developing forms by 80% - 95%.",
         "Maintained Workflow Builder's CI/CD pipelines.",
         "Worked on <a href=\"https://www.sailis.sa.gov.au/home/public\" target=\"_blank\">SAILIS</a> and ILIS - the SA and NT governments' Integrated Land Information System. Typical tasks are: integrating with Workflow Builder, migrating workflow data, developing new features, fixing bugs and so on.",
         "Developed E-Value, a sub-system that works with SAILIS for property valuation, with Spring Boot, Spring Security and so on.",
-        "Developed quick, proof-of-concept prototypes for new projects.",
-        "Relevant Skills: Java, AngularJS, Spring, Spring Boot, Spring Security, Flowable, Node.js, Schema Form, Ajv, Gulp, Bower, Express, EJS, JUnit, Karma, Jasmine, Maven, Jenkins, Oracle, etc."
+        "Developed a fully functional demo built with Workflow Builder in one week, which won the bid for the NT Mineral Exploration Licence System and saved 90% of the development cost.",
+        "Relevant Skills: Java, AngularJS, Spring, Spring Boot, Spring Security, Flowable, JSP, Node.js, Schema Form, Ajv, Gulp, Bower, JUnit, Jasmine, Maven, Jenkins, Oracle, etc."
       ]
     },
     {
       "company": "Nymet Australia",
       "position": "Java Developer (Contractor)",
-      "website": "http://www.nymet.com.au/",
+      "website": "https://www.nymet.com.au/",
       "startDate": "2015.11",
       "endDate": "2016.04",
       "summary": "Added multiple features and enhancements to WaterMe, the company's online irrigation controller system.",
       "highlights": [
-        "Integrated with Weather Underground API to enhance automatic watering.",
+        "Integrated with Weather Underground API to enhance automatic watering, which saves 80%-100% of water in a rainy day.",
         "Optimised the system's performance, reducing its database QPS from 3000 to 600.",
-        "Added international languages support.",
-        "Migrated the project to AWS EC2.",
-        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Karma, Jasmine, JUnit, Maven, AWS EC2, CentOS, Tomcat, MySQL, etc."
+        "Added i18n support that helps Nymet to export products to Brazil and China.",
+        "Released the project to AWS EC2.",
+        "Built a non-production environment for future developers.",
+        "Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Jasmine, Maven, AWS EC2, Tomcat, MySQL, MongoDB, etc."
       ]
     },
     {
@@ -98,13 +100,14 @@
       "website": "http://www.textbookmango.com",
       "startDate": "2014.03",
       "endDate": "2017.03",
-      "summary": "I was responsible for building, hosting and maintaining our own company's web store (www.textbookmango.com) that rents and sells textbooks to university students.",
+      "summary": "TBMango was my own start-up. I was responsible for developing, hosting and maintaining our web store that rents and sells textbooks to university students.",
       "highlights": [
-        "Developed front-end CMS pages and promotion widgets.",
-        "Developed back-end functions such as book management, rented books tracking, and promotion management.",
+        "We went live on 2014-07-07: <a href=\"http://www.textbookmango.com\" target=\"_blank\">http://www.textbookmango.com</a>",
+        "Developed front-end CMS pages, static blocks and promotion widgets.",
+        "Developed back-end functions such as book management, rented books tracking.",
         "Integrated our website with eWAY.",
-        "Deployed and hosted the website using Git on a CentOS LAMP environment.",
-        "Relevant Skills: JavaScript, Java, PHP, Magento, Shell Scripting, CasperJS, OpenCSV, Git, LAMP, CentOS, etc."
+        "Developed automated release process, reducing 2 hours effort to 2 minutes.",
+        "Relevant Skills: PHP, Magento, LAMP, EC2, Shell, Ansible; Java, OpenCSV, CasperJS, Git, etc."
       ]
     },
     {
@@ -125,7 +128,7 @@
     {
       "company": "Beijing Yonyou Audit Software Co., Ltd.",
       "position": "Java Developer",
-      "website": "http://www.yonyouaud.com/",
+      "website": "https://www.yonyouaud.com",
       "startDate": "2009.10",
       "endDate": "2011.02",
       "summary": "Worked as a Java developer for the maintenance and new feature development tasks of UFIDA Online Audit System, a Java C/S system based on UAP-NC platform focusing on massive audit data collecting and analysing",
@@ -173,7 +176,7 @@
     {
       "institution": "Beijing Jiaotong University",
       "area": "Communication Engineering",
-      "studyType": "Bachelor ",
+      "studyType": "Bachelor",
       "startDate": "2003.09",
       "endDate": "2007.06",
       "gpa": "",
@@ -196,7 +199,7 @@
   "publications": [],
   "skills": [
     {
-      "name": "Foundamental",
+      "name": "Basics",
       "level": "Master",
       "keywords": [
         "SOLID",
@@ -206,45 +209,54 @@
       ]
     },
     {
+      "name": "SLDC",
+      "level": "Master",
+      "keywords": [
+        "Agile methodologies",
+        "Software Analysis",
+        "Software Estimation",
+        "Software Designing",
+        "Software Releasing",
+        "TDD",
+        "BDD",
+        "CI/CD"
+      ]
+    },
+    {
       "name": "Java",
       "level": "Master",
       "keywords": [
         "Java",
-        "Kotlin",
-        "Spring",
-        "Spring Security",
         "Spring Boot",
         "Spring Cloud",
         "Hibernate",
-        "JUnit",
-        "Mockito",
+        "MyBatis",
         "JSP",
         "Servlet",
-        "Tomcat",
+        "JUnit",
+        "Kotlin",
         "IntelliJ Plugin Development",
         "Swing",
         "Maven",
-        "Gradle",
-        "Ant"
+        "Gradle"
       ]
     },
     {
-      "name": "Front-end/Node.js",
+      "name": "JS & Web",
       "level": "Master",
       "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
         "React",
         "Redux",
         "Jest",
         "WebPack",
         "Angular",
         "AngularJS",
-        "JavaScript",
-        "TypeScript",
         "HTML",
         "CSS",
-        "jQuery",
-        "Gulp",
-        "Bower"
+        "jQuery"
       ]
     },
     {
@@ -252,11 +264,13 @@
       "level": "Master",
       "keywords": [
         "AWS",
+        "OpenShift",
         "Azure",
         "Jenkins",
         "Groovy",
         "Python",
-        "Shell Scripting"
+        "Ansible",
+        "Shell"
       ]
     },
     {
@@ -273,8 +287,9 @@
       "name": "Others",
       "level": "Master",
       "keywords": [
-        "Microservices",
         "RESTful API",
+        "OAuth2",
+        "Axway",
         "Splunk",
         "Git",
         "SVN"
