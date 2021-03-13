@@ -1,0 +1,19 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-textarea",
+    "name": "Textarea"
+  },
+  "$dnd-data": {
+    "key": "textarea",
+    "uiElementProperties": {
+      "title": "Textarea",
+      "type": "textarea",
+      "enableSuccessState": true,
+      "enableErrorState": true,
+      "feedback": true
+    },
+    "schemaProperties": {
+      "type": "string"
+    }
+  }
+}

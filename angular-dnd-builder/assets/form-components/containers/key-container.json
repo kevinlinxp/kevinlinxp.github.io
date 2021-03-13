@@ -1,0 +1,14 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-key-container",
+    "name": "Key Container"
+  },
+  "$dnd-data": {
+    "key": "keyContainer",
+    "uiElementProperties": {
+      "type": "section",
+      "title": "Key Container"
+    }
+  },
+  "$dnd-children": []
+}

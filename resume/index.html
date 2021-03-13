@@ -1,0 +1,2233 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kevin Lin</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.6/bootstrap.min.css" />
+  <style>
+    @font-face {
+      font-family: 'icomoon';
+      src: url("./icomoon/icomoon.eot");
+      src: url("./icomoon/icomoon#iefix.eot") format('embedded-opentype'),
+      url("./icomoon/icomoon.ttf") format('truetype'),
+      url("./icomoon/icomoon.woff") format('woff'),
+      url("./icomoon/icomoon.svg") format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'icomoon1';
+      src:  url('./icomoon1/icomoon.eot');
+      src:  url('./icomoon1/icomoon.eot#iefix.eot') format('embedded-opentype'),
+      url('./icomoon1/icomoon.ttf') format('truetype'),
+      url('./icomoon1/icomoon.woff') format('woff'),
+      url('./icomoon1/icomoon.svg#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    [class^="icon1-"],
+    [class*=" icon1-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon1' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      font-size: 1.85em !important;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon1-home:before {
+      content: "\e900";
+    }
+
+    .icon1-portfolio:before {
+      content: "\e90e";
+    }
+
+    .icon-instagram:before {
+      content: "\e905";
+    }
+
+    .icon-trophy:before {
+      content: "\e605";
+    }
+
+    .icon-office:before {
+      content: "\e606";
+    }
+
+    .icon-clock:before {
+      content: "\e60a";
+    }
+
+    .icon-reddit:before {
+      content: "\e609";
+    }
+
+    .icon-telegram:before {
+      content: "\e904";
+    }
+
+    .icon-flickr:before {
+      content: "\f16e";
+    }
+
+    .icon-medium:before {
+      content: "\f23a";
+    }
+
+    .icon-heart:before {
+      content: "\f004";
+    }
+
+    .icon-book:before {
+      content: "\f02d";
+    }
+
+    .icon-linkedin:before {
+      content: "\f08c";
+    }
+
+    .icon-twitter:before {
+      content: "\f099";
+    }
+
+    .icon-github:before {
+      content: "\f09b";
+    }
+
+    .icon-link:before {
+      content: "\f0c1";
+    }
+
+    .icon-bars:before {
+      content: "\f0c9";
+    }
+
+    .icon-pinterest:before {
+      content: "\f0d2";
+    }
+
+    .icon-googleplus:before {
+      content: "\f0d5";
+    }
+
+    .icon-circle:before {
+      content: "\f111";
+    }
+
+    .icon-code:before {
+      content: "\f121";
+    }
+
+    .icon-youtube:before {
+      content: "\f167";
+    }
+
+    .icon-stackoverflow:before {
+      content: "\f16c";
+    }
+
+    .icon-bitbucket:before {
+      content: "\f171";
+    }
+
+    .icon-tumblr:before {
+      content: "\f173";
+    }
+
+    .icon-dribbble:before {
+      content: "\f17d";
+    }
+
+    .icon-skype:before {
+      content: "\f17e";
+    }
+
+    .icon-foursquare:before {
+      content: "\f180";
+    }
+
+    .icon-gittip:before {
+      content: "\f184";
+    }
+
+    .icon-gratipay:before {
+      content: "\f184";
+    }
+
+    .icon-stackexchange:before {
+      content: "\f18d";
+    }
+
+    .icon-vimeo:before {
+      content: "\f194";
+    }
+
+    .icon-graduation-cap:before {
+      content: "\f19d";
+    }
+
+    .icon-language:before {
+      content: "\f1ab";
+    }
+
+    .icon-child:before {
+      content: "\f1ae";
+    }
+
+    .icon-behance:before {
+      content: "\f1b5";
+    }
+
+    .icon-spotify:before {
+      content: "\f1bc";
+    }
+
+    .icon-soundcloud:before {
+      content: "\f1be";
+    }
+
+    .icon-codepen:before {
+      content: "\f1cb";
+    }
+
+    .icon-hackernews:before {
+      content: "\f1d4";
+    }
+
+    .icon-lastfm:before {
+      content: "\f202";
+    }
+
+    .icon-angellist:before {
+      content: "\f209";
+    }
+
+    .icon-facebook:before {
+      content: "\f230";
+    }
+
+    .icon-meetup .path1:before {
+      content: "\e901";
+      color: rgb(255, 255, 255);
+    }
+
+    .icon-meetup .path2:before {
+      content: "\e902";
+      margin-left: -1.5em;
+      color: rgb(240, 1, 1);
+    }
+
+    .icon-meetup .path3:before {
+      content: "\e903";
+      margin-left: -1.5em;
+      color: rgb(3, 3, 3);
+    }
+
+    .icon-blogger:before {
+      content: "\e900";
+    }
+
+    .icon-exercism:before {
+      content: "\e601";
+    }
+
+    .icon-profile:before {
+      content: "\e600";
+    }
+
+    .icon-tools:before {
+      content: "\e034";
+    }
+
+    .icon-location:before {
+      content: "\e602";
+    }
+
+    .icon-mail:before {
+      content: "\e603";
+    }
+
+    .icon-phone:before {
+      content: "\e03f";
+    }
+
+    .icon-newspaper:before {
+      content: "\e607";
+    }
+
+    .icon-dots-three-horizontal:before {
+      content: "\e60b";
+    }
+
+    .icon-thumbs-up:before {
+      content: "\e604";
+    }
+
+    .icon-chevron-down:before {
+      content: "\e60c";
+    }
+
+    .icon-chevron-up:before {
+      content: "\e60d";
+    }
+
+    .icon-dots-three-horizontal:before {
+      content: "\e60b";
+    }
+
+    .icon-thumbs-up:before {
+      content: "\e604";
+    }
+
+    .icon-board:before {
+      content: "\e608";
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .clear-margin {
+      margin: 0;
+    }
+
+    .space-top {
+      margin-top: 10px;
+    }
+
+    .space-right {
+      margin-right: 10px;
+    }
+
+    .space-bottom {
+      margin-bottom: 10px;
+    }
+
+    .mr-5 {
+      margin-right: 5px;
+    }
+
+    .mr-10 {
+      margin-right: 10px;
+    }
+
+    .ml-5 {
+      margin-left: 5px;
+    }
+
+    .labels {
+      line-height: 2;
+    }
+
+    .label-keyword {
+      display: inline-block;
+      background: #7eb0db;
+      color: white;
+      font-size: 0.9em;
+      padding: 5px;
+      border: 1px solid #357ebd;
+      margin-right: 5px;
+    }
+
+    .label-keyword:last-child {
+      margin-right: 0;
+    }
+
+    .link-disguise {
+      color: inherit;
+    }
+
+    .link-disguise:hover {
+      color: inherit;
+    }
+
+    .clear-margin {
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      .clear-margin-sm {
+        margin-bottom: 0;
+      }
+    }
+
+    .fs-lg {
+      font-size: 1.33333333em;
+      line-height: .75em;
+      vertical-align: -15%;
+    }
+
+    .fs-2x {
+      font-size: 2em;
+    }
+
+    .fs-3x {
+      font-size: 3em;
+    }
+
+    .fs-4x {
+      font-size: 4em;
+    }
+
+    .btn-circle-sm {
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0;
+      outline: none !important;
+    }
+
+    @font-face {
+      font-family: 'jst-elegant';
+      src: url("./icomoon/icomoon.eot");
+      src: url("./icomoon/icomoon#iefix.eot") format('embedded-opentype'), url("./icomoon/icomoon.ttf") format('truetype'), url("./icomoon/icomoon.woff") format('woff'), url("./icomoon/icomoon.svg") format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'jst-elegant' !important;
+    }
+
+    body {
+      /* font-family: Lato; */
+      font-family: 'Open Sans', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .main {
+      padding: 5px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e6e6e6;
+      border-radius: 3px;
+      min-height: 300px;
+      padding: 10px 0;
+    }
+
+    .card-nested {
+      min-height: 0;
+      border-width: 1px 0 0 0;
+    }
+
+    .card-nested:before,
+    .card-nested:after {
+      content: " ";
+      display: table;
+    }
+
+    .card-nested:after {
+      clear: both;
+    }
+
+    @media (max-width: 480px) {
+      .card-nested {
+        padding: 5px 0;
+      }
+    }
+
+    .background-card {
+      padding: 10px 20px;
+    }
+
+    .card-wrapper {
+      padding: 5px;
+    }
+
+    @media (max-width: 992px) {
+      .card-wrapper {
+        float: none !important;
+      }
+    }
+
+    .background-details .detail {
+      display: table;
+    }
+
+    .background-details .detail .icon {
+      min-width: 45px;
+      max-width: 45px;
+      text-align: center;
+    }
+
+    .background-details .detail .info {
+      width: 100%;
+    }
+
+    .background-details .detail .title,
+    .background-details .detail .icon {
+      color: #707070;
+    }
+
+    .background-details .detail .mobile-title {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .background-details .detail .mobile-title {
+        display: inline-block;
+        margin-left: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+    }
+
+    .background-details .detail .icon,
+    .background-details .detail .info {
+      display: table-cell;
+      padding: 0 10px;
+    }
+
+    @media (max-width: 480px) {
+      .background-details .detail {
+        display: block;
+      }
+      .background-details .detail .icon {
+        max-width: inherit;
+        min-width: inherit;
+        text-align: left;
+      }
+      .background-details .detail .icon,
+      .background-details .detail .info {
+        display: block;
+        padding: 10px 0;
+      }
+      .background-details .detail .title {
+        display: none;
+      }
+    }
+
+    .info .content.has-sidebar {
+      width: 80%;
+      box-sizing: border-box;
+      float: left;
+      padding: 0 10px;
+      border-right: 1px solid #cdcdcd;
+    }
+
+    @media (max-width: 992px) {
+      .info .content.has-sidebar {
+        width: 100%;
+        border-right: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .info .content.has-sidebar {
+        padding: 0 2px;
+      }
+    }
+
+    .info .sidebar {
+      margin-left: 80%;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    @media (max-width: 480px) {
+      ul {
+        padding-left: 25px;
+      }
+    }
+
+    .current-event {
+      font-size: 8px;
+      color: #5ACE24;
+      position: absolute;
+      right: 100%;
+      top: 4px;
+      left: -10px;
+    }
+
+    .mop-wrapper>p:last-child {
+      margin: 0;
+    }
+    /*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+    */
+
+    .floating-nav-trigger {
+      width: 50px;
+      height: 50px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      -webkit-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease;
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      background-color: white;
+      font-size: 1.5em;
+      color: #357ebd;
+      z-index: 100;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      text-decoration: none !important;
+    }
+
+    .floating-nav-trigger>[class^="icon-"],
+    .floating-nav-trigger [class*=" icon-"],
+    .floating-nav-trigger>.close-icon {
+      line-height: 50px;
+    }
+
+    .floating-nav-trigger .close-icon {
+      display: none;
+    }
+
+    .floating-nav-trigger:hover {
+      color: #1f496e;
+      background-color: #e6e6e6;
+    }
+
+    .floating-nav-trigger.is-open {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .floating-nav-trigger.is-open .close-icon {
+      display: inherit;
+    }
+
+    .floating-nav-trigger.is-open .icon-bars {
+      display: none;
+    }
+
+    .floating-nav-trigger.is-open:hover {
+      background-color: white;
+    }
+
+    .floating-nav {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+      -o-transition: transform 0.3s, visibility 0s 0.3s;
+      transition: transform 0.3s, visibility 0s 0.3s;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      position: fixed;
+      z-index: 50;
+      right: 10px;
+      bottom: 10px;
+      background-color: white;
+      width: 90%;
+      max-width: 400px;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    .floating-nav ul {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .floating-nav ul li {
+      border-bottom: 1px solid #eff2f6;
+    }
+
+    .floating-nav ul li a {
+      padding: 20px;
+      text-decoration: none;
+      color: #357ebd;
+      display: block;
+    }
+
+    .floating-nav ul li a:hover {
+      color: #1f496e;
+    }
+
+    .floating-nav ul li:last-child {
+      border-bottom: 0;
+    }
+
+    .floating-nav.is-visible {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: transform 0.3s, visibility 0s 0s;
+      -o-transition: transform 0.3s, visibility 0s 0s;
+      transition: transform 0.3s, visibility 0s 0s;
+      visibility: visible;
+    }
+
+    @media (max-width: 992px) {
+      .profile-card-wrapper {
+        position: relative;
+      }
+    }
+
+    .profile-card-wrapper .profile-card {
+      padding: 10px;
+    }
+
+    .profile-pic {
+      padding: 20px 0;
+    }
+
+    @media (max-width: 992px) {
+      .profile-pic {
+        padding: 10px 0;
+      }
+    }
+
+    .profile-pic img {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 992px) {
+      .name {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-details {
+        text-align: center;
+      }
+    }
+
+    .contact-details .detail {
+      display: table;
+      padding: 10px 0;
+    }
+
+    .contact-details .detail .icon {
+      padding: 0 10px;
+      color: #707070;
+    }
+
+    @media (max-width: 992px) {
+      .contact-details .detail .icon {
+        padding: 0 5px 0 0;
+      }
+    }
+
+    .contact-details .detail .info {
+      font-size: 0.8em;
+    }
+
+    .contact-details .detail .icon,
+    .contact-details .detail .info {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .contact-details .detail {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .contact-details .detail {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 10px;
+      }
+      .contact-details .detail .icon,
+      .contact-details .detail .info {
+        display: inline-block;
+      }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+      .contact-details .detail {
+        float: left;
+        width: 25%;
+      }
+    }
+
+    .social-links {
+      line-height: 2.5;
+    }
+
+    .social-link {
+      margin-left: 5px;
+      min-width: 35px;
+      display: inline-block;
+    }
+
+    .social-link:first-child {
+      margin-left: 0;
+    }
+
+    .social-link:hover {
+      text-decoration: none;
+    }
+
+    .link-github {
+      color: #454545;
+    }
+
+    .link-github:hover,
+    .link-github:focus {
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    .link-twitter {
+      color: #33ccff;
+    }
+
+    .link-twitter:hover,
+    .link-twitter:focus {
+      text-decoration: none;
+      color: #00bfff;
+    }
+
+    .link-blog {
+      color: #f36f24;
+    }
+
+    .link-blog:hover,
+    .link-blog:focus {
+      text-decoration: none;
+      color: #d8560c;
+    }
+
+    .link-linkedin {
+      color: #007bb6;
+    }
+
+    .link-linkedin:hover,
+    .link-linkedin:focus {
+      text-decoration: none;
+      color: #005983;
+    }
+
+    .link-skype {
+      color: #12A5F4;
+    }
+
+    .link-skype:hover,
+    .link-skype:focus {
+      text-decoration: none;
+      color: #0986ca;
+    }
+
+    .link-instagram {
+      color: #e4405f;
+    }
+
+    .link-instagram:hover,
+    .link-instagram:focus {
+      text-decoration: none;
+      color: #d31e40;
+    }
+
+    .link-stackoverflow {
+      color: #f48024;
+    }
+
+    .link-stackoverflow:hover,
+    .link-stackoverflow:focus {
+      text-decoration: none;
+      color: #c3661c;
+    }
+
+    .link-stackexchange {
+      color: #62b0df;
+    }
+
+    .link-stackexchange:hover,
+    .link-stackexchange:focus {
+      text-decoration: none;
+      color: #389bd6;
+    }
+
+    .link-lastfm {
+      color: #d12127;
+    }
+
+    .link-lastfm:hover,
+    .link-lastfm:focus {
+      text-decoration: none;
+      color: #a51a1f;
+    }
+
+    .link-soundcloud {
+      color: #e8822d;
+    }
+
+    .link-soundcloud:hover,
+    .link-soundcloud:focus {
+      text-decoration: none;
+      color: #cc6916;
+    }
+
+    .link-googleplus {
+      color: #dd4b39;
+    }
+
+    .link-googleplus:hover,
+    .link-googleplus:focus {
+      text-decoration: none;
+      color: #c23321;
+    }
+
+    .link-youtube {
+      color: #dd4b39;
+    }
+
+    .link-youtube:hover,
+    .link-youtube:focus {
+      text-decoration: none;
+      color: #c23321;
+    }
+
+    .link-pinterest {
+      color: #bd091f;
+    }
+
+    .link-pinterest:hover,
+    .link-pinterest:focus {
+      text-decoration: none;
+      color: #8c0717;
+    }
+
+    .link-gratipay {
+      color: #630;
+    }
+
+    .link-gratipay:hover,
+    .link-gratipay:focus {
+      text-decoration: none;
+      color: #331a00;
+    }
+
+    .link-vimeo {
+      color: #17b3e8;
+    }
+
+    .link-vimeo:hover,
+    .link-vimeo:focus {
+      text-decoration: none;
+      color: #128fba;
+    }
+
+    .link-behance {
+      color: #2c98cf;
+    }
+
+    .link-behance:hover,
+    .link-behance:focus {
+      text-decoration: none;
+      color: #2379a5;
+    }
+
+    .link-codepen {
+      color: #1c1c1c;
+    }
+
+    .link-codepen:hover,
+    .link-codepen:focus {
+      text-decoration: none;
+      color: #020202;
+    }
+
+    .link-foursquare {
+      color: #fa4778;
+    }
+
+    .link-foursquare:hover,
+    .link-foursquare:focus {
+      text-decoration: none;
+      color: #f91554;
+    }
+
+    .link-reddit {
+      color: #545454;
+    }
+
+    .link-reddit:hover,
+    .link-reddit:focus {
+      text-decoration: none;
+      color: #3b3b3b;
+    }
+
+    .link-spotify {
+      color: #acd200;
+    }
+
+    .link-spotify:hover,
+    .link-spotify:focus {
+      text-decoration: none;
+      color: #829f00;
+    }
+
+    .link-tumblr {
+      color: #2d4661;
+    }
+
+    .link-tumblr:hover,
+    .link-tumblr:focus {
+      text-decoration: none;
+      color: #1d2d3e;
+    }
+
+    .link-dribbble {
+      color: #ce366f;
+    }
+
+    .link-dribbble:hover,
+    .link-dribbble:focus {
+      text-decoration: none;
+      color: #a82959;
+    }
+
+    .link-facebook {
+      color: #4b6daa;
+    }
+
+    .link-facebook:hover,
+    .link-facebook:focus {
+      text-decoration: none;
+      color: #3b5687;
+    }
+
+    .link-angellist {
+      color: black;
+    }
+
+    .link-angellist:hover,
+    .link-angellist:focus {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .link-bitbucket {
+      color: #205081;
+    }
+
+    .link-bitbucket:hover,
+    .link-bitbucket:focus {
+      text-decoration: none;
+      color: #163758;
+    }
+
+    .link-hackernews {
+      color: #ff6600;
+    }
+
+    .link-hackernews:hover,
+    .link-hackernews:focus {
+      text-decoration: none;
+      color: #cc5200;
+    }
+
+    .link-exercism {
+      color: #d81d4e;
+    }
+
+    .link-exercism:hover,
+    .link-exercism:focus {
+      text-decoration: none;
+      color: #ab173e;
+    }
+
+    .link-blogger {
+      color: #FF9234;
+    }
+
+    .link-blogger:hover,
+    .link-blogger:focus {
+      text-decoration: none;
+      color: #ff7701;
+    }
+
+    .link-medium {
+      color: #00AB6C;
+    }
+
+    .link-medium:hover,
+    .link-medium:focus {
+      text-decoration: none;
+      color: #00784c;
+    }
+
+    .link-flickr {
+      color: black;
+    }
+
+    .link-flickr:hover,
+    .link-flickr:focus {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .link-telegram {
+      color: #3BABDD;
+    }
+
+    .link-telegram:hover,
+    .link-telegram:focus {
+      text-decoration: none;
+      color: #2291c3;
+    }
+
+    .card-skills {
+      position: relative;
+    }
+
+    .skill-level {
+      border-radius: 3px;
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 0;
+      width: 10px;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-level .skill-progress {
+      position: absolute;
+      border-radius: 3px;
+      bottom: 0;
+      width: 100%;
+      -webkit-transition: height 1s ease;
+    }
+
+    .skill-level .skill-progress.beginner {
+      height: 50%;
+      background: #e74c3c;
+    }
+
+    .skill-level .skill-progress.intermediate {
+      height: 70%;
+      background: #f1c40f;
+    }
+
+    .skill-level .skill-progress.advanced {
+      height: 80%;
+      background: #428bca;
+    }
+
+    .skill-level .skill-progress.master {
+      height: 95%;
+      background: #5cb85c;
+    }
+
+    .skill-info {
+      margin-left: 15px;
+    }
+
+    @media (max-width: 480px) {
+      .skill-info {
+        margin-left: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .quote {
+        font-size: inherit;
+      }
+    }
+
+    .icon-meetup .path2:before {
+      margin-left: 0;
+    }
+
+    @media print {
+      a[href]:after {
+        content: none !important;
+      }
+      .profile-card {
+        text-align: center;
+      }
+      .profile-pic {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .profile-pic img {
+        border-radius: 0;
+      }
+      .name-and-profession {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+      .contact-details .detail {
+        position: relative;
+        float: left;
+        width: 25%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 0;
+      }
+      .floating-nav,
+      .floating-nav-trigger {
+        display: none;
+      }
+      .pagebreak {
+        page-break-before: always;
+      }
+    }
+
+    span.icon {
+      width: 59px;
+    }
+  </style>
+</head>
+
+<body itemscope="itemscope" itemtype="http://schema.org/Person">
+  <div class="container-fluid">
+    <div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a>
+      <nav class="floating-nav js-floating-nav">
+        <ul class="list-unstyled">
+          <li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li>
+          <li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li>
+          <li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li>
+          <li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li>
+          <li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li>
+          <li><a href="#volunteer-work"><i class="mr-10 icon-child"></i>Volunteer Work</a></li>
+          <li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li>
+        </ul>
+      </nav>
+      <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+        <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Kevin Lin" src="../images/kevinlin@blueMt.png" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Kevin Lin</b></h3><h5 class="text-muted" itemprop="jobTitle">Full-stack Developer (Java/React)</h5></div></span>
+        <hr/>
+        <div class="contact-details clearfix">
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Level 6, 10 Shelley Street, Sydney, NSW, AU, 2000</span></div>
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+61 450 095 568</span></div>
+          <div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:kevinlinxp@gmail.com" itemprop="email">kevinlinxp@gmail.com</a></span></div>
+          <div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Mandarin</span></div>
+        </div>
+        <hr/>
+        <div class="social-links text-center">
+          <div>
+            
+            <!--  -->
+            <a class="fs-2x social-link link-home icon1-home" href="/"
+            target="" data-toggle="tooltip" title="Home"></a>
+            
+            <!--  -->
+            <a class="fs-2x social-link link-portfolio icon1-portfolio" href="/portfolio"
+            target="" data-toggle="tooltip" title="Portfolio"></a>
+            
+            <!--  -->
+            <a class="fs-2x social-link link-linkedin icon-linkedin" href="https://linkedin.com/in/kevinlinxp"
+            target="_blank" data-toggle="tooltip" title="LinkedIn"></a>
+            
+            <!--  -->
+            <a class="fs-2x social-link link-github icon-github" href="https://github.com/kevinlinxp"
+            target="_blank" data-toggle="tooltip" title="Github"></a>
+            
+          </div>
+        </div>
+      </section>
+      <section class="col-md-9 card-wrapper pull-right">
+        <div class="card background-card">
+          <h4 class="text-uppercase hidden">Background</h4>
+          <div class="background-details">
+            <div class="detail" id="about">
+              <div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">About</h4>
+                <div class="card card-nested">
+                  <div class="content mop-wrapper" itemprop="description">
+                    <p>I am a full stack Java/React developer with 8 years of work experience who regards building high-quality and valuable software systems as the very essence of my career. I love to combine all sorts of suitable technologies, traditional or cutting-edge, to realise fantastic ideas or to take existing projects to the next level. It's a great joy for me being a contributive, cooperative team player and making our projects increasingly powerful, robust, and profitable.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail" id="skills">
+              <div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Skills</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Basics</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">SOLID</span>
+                          
+                          <span class="label label-keyword">GRASP</span>
+                          
+                          <span class="label label-keyword">Design Patterns</span>
+                          
+                          <span class="label label-keyword">Data Structures</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>SLDC</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">Agile methodologies</span>
+                          
+                          <span class="label label-keyword">Software Analysis</span>
+                          
+                          <span class="label label-keyword">Software Estimation</span>
+                          
+                          <span class="label label-keyword">Software Designing</span>
+                          
+                          <span class="label label-keyword">Software Releasing</span>
+                          
+                          <span class="label label-keyword">TDD</span>
+                          
+                          <span class="label label-keyword">BDD</span>
+                          
+                          <span class="label label-keyword">CI/CD</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Java</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">Java</span>
+                          
+                          <span class="label label-keyword">Spring Boot</span>
+                          
+                          <span class="label label-keyword">Spring Cloud</span>
+                          
+                          <span class="label label-keyword">Hibernate</span>
+                          
+                          <span class="label label-keyword">MyBatis</span>
+                          
+                          <span class="label label-keyword">JSP</span>
+                          
+                          <span class="label label-keyword">Servlet</span>
+                          
+                          <span class="label label-keyword">JUnit</span>
+                          
+                          <span class="label label-keyword">Kotlin</span>
+                          
+                          <span class="label label-keyword">IntelliJ Plugin Development</span>
+                          
+                          <span class="label label-keyword">Swing</span>
+                          
+                          <span class="label label-keyword">Maven</span>
+                          
+                          <span class="label label-keyword">Gradle</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>JS & Web</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">JavaScript</span>
+                          
+                          <span class="label label-keyword">TypeScript</span>
+                          
+                          <span class="label label-keyword">Node.js</span>
+                          
+                          <span class="label label-keyword">React</span>
+                          
+                          <span class="label label-keyword">Redux</span>
+                          
+                          <span class="label label-keyword">Jest</span>
+                          
+                          <span class="label label-keyword">WebPack</span>
+                          
+                          <span class="label label-keyword">Angular</span>
+                          
+                          <span class="label label-keyword">AngularJS</span>
+                          
+                          <span class="label label-keyword">HTML</span>
+                          
+                          <span class="label label-keyword">CSS</span>
+                          
+                          <span class="label label-keyword">jQuery</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>DevOps</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">AWS</span>
+                          
+                          <span class="label label-keyword">OpenShift</span>
+                          
+                          <span class="label label-keyword">Azure</span>
+                          
+                          <span class="label label-keyword">Jenkins</span>
+                          
+                          <span class="label label-keyword">Groovy</span>
+                          
+                          <span class="label label-keyword">Python</span>
+                          
+                          <span class="label label-keyword">Ansible</span>
+                          
+                          <span class="label label-keyword">Shell</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Databases</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">SQL</span>
+                          
+                          <span class="label label-keyword">Oracle</span>
+                          
+                          <span class="label label-keyword">MySQL</span>
+                          
+                          <span class="label label-keyword">MongoDB</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="card card-nested card-skills">
+                      <div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+                        <div class="skill-progress master"></div>
+                      </div>
+                      <div class="skill-info"><strong>Others</strong>
+                        <div class="space-top labels">
+                          
+                          <span class="label label-keyword">RESTful API</span>
+                          
+                          <span class="label label-keyword">OAuth2</span>
+                          
+                          <span class="label label-keyword">Axway</span>
+                          
+                          <span class="label label-keyword">Splunk</span>
+                          
+                          <span class="label label-keyword">Git</span>
+                          
+                          <span class="label label-keyword">SVN</span>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="detail" id="work-experience">
+              <div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Work Experience</h4>
+                <ul class="list-unstyled clear-margin">
+                  
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
+                        
+                        <strong>Software Engineer (Full-time)</strong>,&nbsp;<a href="https://www.suncorpgroup.com.au/" target="_blank">Suncorp Group</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             Jun,
+                            
+                            
+                            2018
+                             -
+                            
+                           Present
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>Building and maintaining insurance sales applications and APIs for multiple brands (AAMI, Suncorp, GIO, APIA) and products (Car, Home, Motorcycle, Dealer, Health) of Suncorp Group.</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>Rebuilt <a href="https://motor.aami.com.au" target="_blank">AAMI</a>, <a href="https://motor.gio.com.au" target="_blank">GIO</a>, and <a href="https://motor.suncorp.com.au" target="_blank">Suncorp</a> motor insurance sales SPAs (Single Page Applications) and APIs from ground-up with React and Spring Boot. These new experiences increased FY19 GWP (Gross Written Premiums) per brand by 5.32% (AAMI), 15.58% (GIO) and 15.19% (Suncorp).</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Designed consistent Redux store and API contract across 3 teams.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed React HOC and Redux middleware that collect and report analytics data from 40 web pages per each brand.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Led the successful production release of GIO Car Insurance UI.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>The “go-to” guy during the partner transition period for two teams, 12 people.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Improved CI/CD by using declarative pipelines; decoupled Jenkins nodes from code and reorganising credentials and service accounts.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: React, Redux, Node.js, Webpack, S3, CloudFront; Java, Spring Boot, OAuth2, Axway, OpenShift, EC2; Jenkins, Groovy, Python, Ansible, CloudFormation, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <strong>Java Developer (Full-time)</strong>,&nbsp;<a href="https://relational.com.au/" target="_blank">Relational Data Systems</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             May,
+                            
+                            
+                            2016
+                             -
+                            
+                            
+                            
+                            
+                             Jun,
+                            
+                            
+                            2018
+                            
+                          </span><span>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <i class="icon-clock mr-5"></i>
+                           
+                           2
+                           
+                           years
+                           
+                           
+                           
+                           1
+                           
+                           month
+                           
+                           
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>Worked in agile and waterfall teams as a solution engineer and problem solver for the company’s new initiatives (Workflow Builder) and existing projects (Integrated Land Information Systems).</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed Workflow Builder - a set of pluggable web artefacts that can create and run workflows in a drag-and-drop manner. It reduces the cost of developing forms by 80% - 95%.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Maintained Workflow Builder's CI/CD pipelines.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Worked on <a href="https://www.sailis.sa.gov.au/home/public" target="_blank">SAILIS</a> and ILIS - the SA and NT governments' Integrated Land Information System. Typical tasks are: integrating with Workflow Builder, migrating workflow data, developing new features, fixing bugs and so on.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed E-Value, a sub-system that works with SAILIS for property valuation, with Spring Boot, Spring Security and so on.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed a fully functional demo built with Workflow Builder in one week, which won the bid for the NT Mineral Exploration Licence System and saved 90% of the development cost.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: Java, AngularJS, Spring, Spring Boot, Spring Security, Flowable, JSP, Node.js, Schema Form, Ajv, Gulp, Bower, JUnit, Jasmine, Maven, Jenkins, Oracle, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <strong>Java Developer (Contractor)</strong>,&nbsp;<a href="https://www.nymet.com.au/" target="_blank">Nymet Australia</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             Nov,
+                            
+                            
+                            2015
+                             -
+                            
+                            
+                            
+                            
+                             Apr,
+                            
+                            
+                            2016
+                            
+                          </span><span>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <i class="icon-clock mr-5"></i>
+                           
+                           
+                           5
+                           
+                           months
+                           
+                           
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>Added multiple features and enhancements to WaterMe, the company's online irrigation controller system.</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>Integrated with Weather Underground API to enhance automatic watering, which saves 80%-100% of water in a rainy day.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Optimised the system's performance, reducing its database QPS from 3000 to 600.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Added i18n support that helps Nymet to export products to Brazil and China.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Released the project to AWS EC2.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Built a non-production environment for future developers.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: Java, AngularJS, Spring, Hibernate, JUnit, Node.js, Bower, Jasmine, Maven, AWS EC2, Tomcat, MySQL, MongoDB, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <strong>Co-founder and Full Stack Developer</strong>,&nbsp;<a href="http://www.textbookmango.com" target="_blank">TextbookMango</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             Mar,
+                            
+                            
+                            2014
+                             -
+                            
+                            
+                            
+                            
+                             Mar,
+                            
+                            
+                            2017
+                            
+                          </span><span>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <i class="icon-clock mr-5"></i>
+                           
+                           3
+                           
+                           years
+                           
+                           
+                           
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>TBMango was my own start-up. I was responsible for developing, hosting and maintaining our web store that rents and sells textbooks to university students.</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>We went live on 2014-07-07: <a href="http://www.textbookmango.com" target="_blank">http://www.textbookmango.com</a></p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed front-end CMS pages, static blocks and promotion widgets.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed back-end functions such as book management, rented books tracking.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Integrated our website with eWAY.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed automated release process, reducing 2 hours effort to 2 minutes.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: PHP, Magento, LAMP, EC2, Shell, Ansible; Java, OpenCSV, CasperJS, Git, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <strong>Application Developer</strong>,&nbsp;<a href="https://www.ibm.com/cn-zh/" target="_blank">IBM China</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             Mar,
+                            
+                            
+                            2011
+                             -
+                            
+                            
+                            
+                            
+                             Jun,
+                            
+                            
+                            2013
+                            
+                          </span><span>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <i class="icon-clock mr-5"></i>
+                           
+                           2
+                           
+                           years
+                           
+                           
+                           
+                           3
+                           
+                           months
+                           
+                           
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>Worked in IBM Systems Lab Services as a front-end developer for IBM SCE (Smart Cloud Environment, an IaaS platform), as well as being responsible for researching and developing subsidiary projects for IBM SDC (Smart Data Centre).</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>Created and maintained reusable front-end components for IBM SCE with Dojo.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Planned the architecture and worked out the 3D presentation solutions for the IBM SDC data visualisation applications using WebGL and VTK.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Developed OpenFOAM mesh and boundary condition generation tool that works with VTK to visualise data centre temperature and wind data.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Optimised the data centre sensors control module which increased the data collection rate by 6 times.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: Java, Struts 2, Spring, Hibernate, JSP, JavaScript, WebGL, Dojo, VTK, OpenFoam, Swing, JWS, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+                  <li class="card card-nested clearfix">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        
+                        <strong>Java Developer</strong>,&nbsp;<a href="https://www.yonyouaud.com" target="_blank">Beijing Yonyou Audit Software Co., Ltd.</a>
+                      </p>
+                      <p class="text-muted">
+                        <small>
+                          <span class="space-right">
+                            
+                            
+                            
+                             Oct,
+                            
+                            
+                            2009
+                             -
+                            
+                            
+                            
+                            
+                             Feb,
+                            
+                            
+                            2011
+                            
+                          </span><span>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <i class="icon-clock mr-5"></i>
+                           
+                           1
+                           
+                           year
+                           
+                           
+                           
+                           4
+                           
+                           months
+                           
+                           
+                           
+                         </span>
+                       </small>
+                     </p>
+                     <div class="mop-wrapper space-bottom">
+                      <p>Worked as a Java developer for the maintenance and new feature development tasks of UFIDA Online Audit System, a Java C/S system based on UAP-NC platform focusing on massive audit data collecting and analysing</p>
+                    </div>
+                    <ul>
+                      
+                      <li class="mop-wrapper">
+                        <p>Maintained the “Query Engine” module which helps users with no or limited SQL knowledge to browse, analyse and report audit data.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Participated in the whole process upgrading our product from version 5.0 to 5.5. Designed and implemented new features according to user requirements.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Promoted code review and code refactoring in our team.</p>
+                      </li>
+                      
+                      <li class="mop-wrapper">
+                        <p>Relevant Skills: Java, Swing, JWS, JavaScript, jQuery, HTML, CSS, Struts, Spring, Hibernate, SQL, Oracle, etc.</p>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="detail" id="education">
+            <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Education</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  
+                  
+                  
+                  
+
+                  
+                  
+                  
+
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        <strong>Software Engineering, Master,&nbsp;</strong>
+                        University of Adelaide
+                      </p>
+                      <p class="text-muted clear-margin">
+                        <small>
+                           Jul,
+                           
+                  2013
+                   -
+                           Jul,
+                           
+                  2015
+                  
+                        </small>
+                      </p>
+                      <i></i>
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+
+                  
+                  
+                  
+
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        <strong>Software Engineering - Business Intelligence, Master,&nbsp;</strong>
+                        Beijing Jiaotong University
+                      </p>
+                      <p class="text-muted clear-margin">
+                        <small>
+                           Sep,
+                           
+                  2007
+                   -
+                           Jun,
+                           
+                  2009
+                  
+                        </small>
+                      </p>
+                      <i></i>
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+
+                  
+                  
+                  
+
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative">
+                        <strong>Communication Engineering, Bachelor,&nbsp;</strong>
+                        Beijing Jiaotong University
+                      </p>
+                      <p class="text-muted clear-margin">
+                        <small>
+                           Sep,
+                           
+                  2003
+                   -
+                           Jun,
+                           
+                  2007
+                  
+                        </small>
+                      </p>
+                      <i></i>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="detail" id="awards">
+            <div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Awards</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  
+                  
+                  
+                  
+                  
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin" itemprop="award"><strong>Outstanding Performance,</strong> IBM China</p>
+                      <p class="text-muted"><small>Awarded on:
+                         Jan
+                         
+                  21
+                  , 
+                  2013
+                  </small></p>
+                      
+                      <div class="mop-wrapper">
+                        <p>Personal Business Contribution Assessment Level 1 - Outstanding (Top 5%)</p>
+                      </div>
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin" itemprop="award"><strong>Best Newcomer of The Year,</strong> Beijing Yonyou Audit Software Co., Ltd.</p>
+                      <p class="text-muted"><small>Awarded on:
+                         Jan
+                         
+                  10
+                  , 
+                  2010
+                  </small></p>
+                      
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="detail" id="volunteer-work">
+            <div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Volunteer Work</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  
+                  
+                  
+                  
+
+                  
+                  
+                  
+                  <li class="card card-nested">
+                    <div class="content">
+                      <p class="clear-margin relative"><strong>Translation Assistance, </strong><a href="http://www.acbc.com.au" target="_blank">Australia China Business Council</a></p>
+                      <p class="text-muted">
+                        <small>
+                           Nov,
+                           
+                  2015
+                   -
+                           Nov,
+                           
+                  2015
+                  
+                        </small>
+                      </p>
+                      <div class="mop-wrapper"></div>
+                      <ul>
+                        
+                        <li class="mop-wrapper">
+                          <p>Helped the Business Council to set up the venue for the business migration, investment and trade exposition.</p>
+                        </li>
+                        
+                        <li class="mop-wrapper">
+                          <p>Assisted the local council members and business representatives from Mount Barker during the event, providing translation service between them and the Chinese business delegates.</p>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="detail" id="interests">
+            <div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div>
+            <div class="info">
+              <h4 class="title text-uppercase">Interests</h4>
+              <div class="content">
+                <ul class="list-unstyled clear-margin">
+                  
+                  <li class="card card-nested">
+                    <p><strong>Sports</strong></p>
+                    <div class="space-top labels">
+                      
+                      <span class="label label-keyword">
+                        Hiking
+                      </span>
+                      
+                      <span class="label label-keyword">
+                        Foosball (Table Football)
+                      </span>
+                      
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="./bootstrap-3.3.6/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    var toggleFloatingMenu = function () {
+      $('.js-floating-nav').toggleClass('is-visible');
+      $('.js-floating-nav-trigger').toggleClass('is-open');
+    };
+
+    $(".background-card").css("min-height", window.screen.availHeight + "px");
+    $("[data-toggle=tooltip]").tooltip();
+    $('.js-floating-nav-trigger').on('click', function (e) {
+      e.preventDefault();
+      toggleFloatingMenu();
+    });
+    $('.js-floating-nav a').on('click', toggleFloatingMenu);
+
+    $("#remaining-profiles").on('show.bs.collapse', function () {
+      $('.js-profiles-collapse > i')
+      .removeClass('icon-chevron-down')
+      .addClass('icon-chevron-up');
+    });
+
+    $("#remaining-profiles").on('hidden.bs.collapse', function () {
+      $('.js-profiles-collapse > i')
+      .removeClass('icon-chevron-up')
+      .addClass('icon-chevron-down');
+    });
+  });
+</script>
+<script>
+  WebFontConfig = {
+        // google: { families: ['Lato:300,400,700:latin'] }
+        google: { families: ['Open+Sans:300,400,700'] }
+      };
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </body>
+
+  </html>

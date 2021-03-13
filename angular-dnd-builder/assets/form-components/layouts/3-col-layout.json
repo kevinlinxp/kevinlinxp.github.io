@@ -1,0 +1,61 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-section",
+    "name": "3-Col-Layout"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "type": "section",
+      "title": "Row (div.row)",
+      "notitle": true,
+      "htmlClass": "row"
+    }
+  },
+  "$dnd-children": [
+    {
+      "$dnd-metadata": {
+        "editorId": "fd-editor-column",
+        "name": "Column (div.col)"
+      },
+      "$dnd-data": {
+        "uiElementProperties": {
+          "type": "section",
+          "title": "Column (div.col)",
+          "notitle": true,
+          "htmlClass": "col-sm-4"
+        }
+      },
+      "$dnd-children": []
+    },
+    {
+      "$dnd-metadata": {
+        "editorId": "fd-editor-column",
+        "name": "Column (div.col)"
+      },
+      "$dnd-data": {
+        "uiElementProperties": {
+          "type": "section",
+          "title": "Column (div.col)",
+          "notitle": true,
+          "htmlClass": "col-sm-4"
+        }
+      },
+      "$dnd-children": []
+    },
+    {
+      "$dnd-metadata": {
+        "editorId": "fd-editor-column",
+        "name": "Column (div.col)"
+      },
+      "$dnd-data": {
+        "uiElementProperties": {
+          "type": "section",
+          "title": "Column (div.col)",
+          "notitle": true,
+          "htmlClass": "col-sm-4"
+        }
+      },
+      "$dnd-children": []
+    }
+  ]
+}

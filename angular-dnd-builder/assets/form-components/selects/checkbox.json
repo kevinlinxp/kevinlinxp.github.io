@@ -1,0 +1,16 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-checkbox",
+    "name": "Boolean Checkbox"
+  },
+  "$dnd-data": {
+    "key": "checkbox",
+    "uiElementProperties": {
+      "title": "Boolean Checkbox",
+      "type": "checkbox"
+    },
+    "schemaProperties": {
+      "type": "boolean"
+    }
+  }
+}

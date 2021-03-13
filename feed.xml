@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Lin</title>
+    <description>Full Stack Java Angular AngularJS Developer</description>
+    <link>http://www.kevinlinxp.com/</link>
+    <atom:link href="http://www.kevinlinxp.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Mar 2021 10:47:40 +1100</pubDate>
+    <lastBuildDate>Sun, 14 Mar 2021 10:47:40 +1100</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Form Builder (Simplified Version)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;../../../angular-dnd-builder&quot; target=&quot;_blank&quot;&gt;Open demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a simplified version of &lt;code&gt;Form Builder&lt;/code&gt; - the front-end part of my current project &lt;code&gt;RDS Workflow System Builder&lt;/code&gt; - rewritten from &lt;a href=&quot;https://angularjs.org/&quot; target=&quot;_blank&quot;&gt;AngularJS&lt;/a&gt; to &lt;a href=&quot;https://angular.io/&quot; target=&quot;_blank&quot;&gt;Angular&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The size of this demo is 3MB and it will send remote calls to my cheap back-end server which is in the US. So please wait for a few seconds for it to load, or just refresh the page if it takes too long.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Sep 2017 05:30:00 +1000</pubDate>
+        <link>http://www.kevinlinxp.com/showcases/2017/angular-dnd-builder/</link>
+        <guid isPermaLink="true">http://www.kevinlinxp.com/showcases/2017/angular-dnd-builder/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>WaterMe</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.control-me.net&quot; target=&quot;_blank&quot;&gt;Open live site (the WaterMe server)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Test Account: test20@nymet.com.au/1234&lt;/p&gt;
+
+&lt;h4 id=&quot;background&quot;&gt;Background&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.nymet.com.au/&quot; target=&quot;_blank&quot;&gt;Nymet Australia&lt;/a&gt; sells “WaterMe”, a wireless irrigation device that can control valves, collect watering metrics, and communicate with &lt;a href=&quot;https://www.control-me.net&quot; target=&quot;_blank&quot;&gt;the WaterMe server&lt;/a&gt; through HTTP. Customers can register their purchased devices on &lt;a href=&quot;https://www.control-me.net&quot;&gt;the WaterMe server&lt;/a&gt; and control them remotely.&lt;/p&gt;
+
+&lt;h4 id=&quot;technology&quot;&gt;Technology&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;The back-end technology stack is a typical combination of Spring MVC and Hibernate with RESTful APIs (Jersey).&lt;/li&gt;
+  &lt;li&gt;The front-end uses JSP with AngularJS to create an interactive UI for the system users.&lt;/li&gt;
+  &lt;li&gt;This small real-time project is fully covered with unit and integration tests.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 17 Mar 2016 06:30:00 +1100</pubDate>
+        <link>http://www.kevinlinxp.com/showcases/2016/water-me/</link>
+        <guid isPermaLink="true">http://www.kevinlinxp.com/showcases/2016/water-me/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>TextbookMango</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.textbookmango.com&quot; target=&quot;_blank&quot;&gt;Open “live” site&lt;/a&gt; (cqqlin@gmail.com/123456)&lt;/p&gt;
+
+&lt;h4 id=&quot;background&quot;&gt;Background&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;TextbookMango&lt;/code&gt; is an unforgettable memory of mine. In late 2013, I met my ambitious partners in university when I was studying for my Master’s degree in Software Engineering. Then together, we started &lt;code&gt;TextBookMango&lt;/code&gt; - a small book shop in Pirie Street renting and selling textbooks through &lt;a href=&quot;http://www.textbookmango.com&quot; target=&quot;_blank&quot;&gt;the website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I could still feel the joy of those moments when our website was finally online, when the sales inbox got the first order email, when we welcomed the first customer in our store, and so on.&lt;/p&gt;
+
+&lt;p&gt;Although we had to eventually close our business after 3 years of hard work without seeing expected profit growth, all of us learned a lot by joining our efforts to run such a real business for literally 36 months.&lt;/p&gt;
+
+&lt;h4 id=&quot;technology&quot;&gt;Technology&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;This is a low-cost Magento web store with friendly UI, good customer experience (one-page-checkout) and easy-to-use admin.&lt;/li&gt;
+  &lt;li&gt;The rented book tracking and selling request are implemented by developing Magento plugins.&lt;/li&gt;
+  &lt;li&gt;The payment gateway is integrated using the eWAY Magento plugin from the Magento Marketplace.&lt;/li&gt;
+  &lt;li&gt;The project was firstly hosted in Linode.com then migrated to AWS.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 07 Jul 2014 10:00:00 +1000</pubDate>
+        <link>http://www.kevinlinxp.com/showcases/2014/textbookmango/</link>
+        <guid isPermaLink="true">http://www.kevinlinxp.com/showcases/2014/textbookmango/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

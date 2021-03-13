@@ -1,0 +1,14 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-button",
+    "name": "Reset"
+  },
+  "$dnd-data": {
+    "uiElementProperties": {
+      "title": "Reset",
+      "type": "button",
+      "style": "btn-warning",
+      "onClick": "reset()"
+    }
+  }
+}

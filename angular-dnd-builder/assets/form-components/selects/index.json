@@ -1,0 +1,11 @@
+{
+  "name": "Selects",
+  "items": [
+    "single-select.json",
+    "radios.json",
+    "radios-inline.json",
+    "radiobuttons.json",
+    "checkbox.json",
+    "checkboxes.json"
+  ]
+}

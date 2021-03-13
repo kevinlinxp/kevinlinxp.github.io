@@ -1,0 +1,33 @@
+{
+  "$dnd-metadata": {
+    "editorId": "fd-editor-radiobuttons",
+    "name": "Radio Buttons"
+  },
+  "$dnd-data": {
+    "key": "radiobuttons",
+    "uiElementProperties": {
+      "title": "Radio Buttos",
+      "type": "radiobuttons",
+      "titleMap": [
+        {
+          "value": "yes",
+          "name": "Yes"
+        },
+        {
+          "value": "no",
+          "name": "No"
+        }
+      ],
+      "style": {
+        "selected": "btn-success",
+        "unselected": "btn-default"
+      },
+      "enableSuccessState": true,
+      "enableErrorState": true,
+      "feedback": false
+    },
+    "schemaProperties": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Form Components",
+  "items": [
+    "inputs",
+    "selects",
+    "containers",
+    "layouts",
+    "buttons",
+    "widgets"
+  ]
+}
